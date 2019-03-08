@@ -1,3 +1,3 @@
 Initial wiki page.
 
-[TODOs](todo)
+[TODOs](todos)
