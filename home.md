@@ -1,3 +1,3 @@
 Initial wiki page.
 
-[TODOs](todos)
+[TODOs](Wiki-TODO-List)
