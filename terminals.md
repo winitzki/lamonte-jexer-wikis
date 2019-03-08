@@ -33,9 +33,13 @@ Most popular X11 terminals can run Jexer, but so far only [xterm](https://invisi
 | qodem-x11(3)   | X11                | yes         | no           | no     |
 
 1 - Requires mouse support from host terminal.
+
 2 - Also fails to filter out sixel data, leaving garbage on screen.
+
 3 - Latest in repository.
+
 4 - Requires TERM=xterm-1003 before starting.
+
 5 - Opening image crashes terminal.
 
 When running on the raw Linux console, [LCXterm](https://gitlab.com/klamonte/lcxterm) or [Qodem](http://qodem.sourceforge.net) are required if one wishes to use the mouse.  [GPM](https://github.com/telmich/gpm) is also required.
