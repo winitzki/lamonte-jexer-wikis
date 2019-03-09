@@ -25,7 +25,7 @@ Binary release downloads are also available on [SourceForge.](https://sourceforg
 Documentation
 -------------
 
-* [API docs](https://jexer.sourceforge.io/apidocs/index.html)
+* [API docs](https://jexer.sourceforge.io/apidocs/api/index.html)
 * Jexer's [high-level design.](high-level-design)
 
 
