@@ -27,7 +27,7 @@ Documentation
 
 * [API docs](https://jexer.sourceforge.io/apidocs/api/index.html)
 * Jexer's [high-level design.](high-level-design)
-* Jexer [java.lang.System properties.](system-properties)
+* Jexer [java.lang.System properties.](jexer system properties)
 * [Known limitations.](limitations)
 
 
