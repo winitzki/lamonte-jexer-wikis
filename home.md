@@ -7,6 +7,8 @@ The screenshot below shows several open windows, widgets (buttons, input fields,
 
 ![Screenshot](https://gitlab.com/klamonte/jexer/raw/master/screenshots/screenshot1.png)
 
+
+
 Obtaining Jexer
 ---------------
 
@@ -22,6 +24,8 @@ Jexer is available on Maven Central:
 
 Binary release downloads are also available on [SourceForge.](https://sourceforge.net/projects/jexer/files/jexer/)
 
+
+
 Documentation
 -------------
 
@@ -29,6 +33,8 @@ Documentation
 * Jexer's [high-level design.](high-level-design)
 * Jexer [java.lang.System properties.](jexer system properties)
 * [Known limitations.](limitations)
+* [Supported terminals.](terminals)
+* [Recommended fonts for Xterm.](fonts)
 
 
 
@@ -38,6 +44,7 @@ Examples
 * Prototype [tiling window manager.](example-tiling-wm)
 * Prototype [file viewer.](example-image-viewer)
 * The [official demo.](demo-application)
+
 
 
 Widget Gallery
