@@ -78,4 +78,5 @@ Widget Gallery
 Other
 -----
 
+[Wishlist](wishlist)
 [TODOs](Wiki-TODO-List)
