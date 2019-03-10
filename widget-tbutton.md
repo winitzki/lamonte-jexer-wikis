@@ -18,5 +18,13 @@ In the button above, the label passed in the constructor was "&MessageBoxes".  T
 Examples
 --------
 
-
+```Java
+TButton button = addButton("&MessageBoxes", column, row,
+        new TAction() {
+            public void DO() {
+                new DemoMsgBoxWindow(getApplication());
+            }
+        }
+    );
+```
 
