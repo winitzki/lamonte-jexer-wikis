@@ -10,18 +10,26 @@ Internal Design:
 
 Platform Specifics:
 
-  * Supported terminals list for ECMA48 backend
+  * ~~Supported terminals list for ECMA48 backend~~
   * POSIX: using ptypipe to achieve resizable TTerminalWindows
   * Linux console: using LCXterm for mouse support
 
 Widgets Gallery
+  * Widget template:
+    * Screenshot(s)
+    * Example usage
+    * Link to Javadoc
+  * For each widget:
+    * Fix PMD warnings
+    * Fix checkstyle issues
 
 Howto's:
 
-  * Hello World
-  * Dialog boxes
+  * ~~Hello World~~
   * Prototype tiling WM
   * Prototype file viewer
+  * Dialog boxes: TMessageBox, TInputBox, TFileOpenDialog
   * MultiScreen / MultiBackend
-  * Using a Backend alone (like jermit)
+  * Using TWindowBackend to run an application inside a window
+  * Using a Backend alone (like jermit's Qodem UI)
 
