@@ -41,9 +41,10 @@ Documentation
 Examples
 --------
 
+* [Hello World.](hello-world)
+* The [official demo.](demo-application)
 * Prototype [tiling window manager.](example-tiling-wm)
 * Prototype [file viewer.](example-image-viewer)
-* The [official demo.](demo-application)
 
 
 
@@ -78,5 +79,5 @@ Widget Gallery
 Other
 -----
 
-[Wishlist](wishlist)
-[TODOs](Wiki-TODO-List)
+* [Feature Wishlist](wishlist)
+* [TODOs for this Wiki](Wiki-TODO-List)
