@@ -31,6 +31,7 @@ Most popular X11 terminals can run Jexer, but so far only [xterm](https://invisi
 | Linux          | Linux console      | no          | no           | no(2)  |
 | qodem(3)       | CLI, Linux console | yes         | yes(4)       | no     |
 | qodem-x11(3)   | X11                | yes         | no           | no     |
+| yaft           | Linux console (FB) | no          | no           | yes    |
 
 1 - Requires mouse support from host terminal.
 
