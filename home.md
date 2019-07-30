@@ -56,11 +56,16 @@ Widget Gallery
 * [TCheckBox](widget-tcheckbox)
 * [TComboBox](widget-tcombobox)
 * [TDirectoryList](widget-tdirectorylist)
-* [TEditor](widget-teditor)
+* [TEditColorThemeWindow](widget-teditcolorthemewindow)
+* [TEditorWidget](widget-teditorwidget)
+* [TEditorWindow](widget-teditorwindow)
+* [TExceptionDialog](widget-texceptiondialog)
 * [TField](widget-tfield)
 * [TFileOpenBox](widget-tfileopenbox)
 * [TFontChooserWindow](widget-tfontchooserwindow)
+* [THScroller](widget-thscroller)
 * [TImage](widget-timage)
+* [TImageWindow](widget-timagewindow)
 * [TInputBox](widget-tinputbox)
 * [TLabel](widget-tlabel)
 * [TList](widget-tlist)
@@ -68,13 +73,16 @@ Widget Gallery
 * [TPasswordField](widget-tpasswordfield)
 * [TProgressBar](widget-tprogressbar)
 * [TRadioGroup](widget-tradiogroup)
+* [TScrollableWidget](widget-tscrollablewidget)
+* [TScrollableWindow](widget-tscrollablewindow)
 * [TSpinner](widget-tspinner)
-* [TTable](widget-ttable)
+* [TStatusBar](widget-tstatusbar)
+* [TTableWidget](widget-ttablewidget)
+* [TTableWindow](widget-ttablewindow)
 * [TTerminalWindow](widget-tterminalwindow)
 * [TText](widget-ttext)
+* [TVScroller](widget-tvscroller)
 * [TWindow](widget-twindow)
-
-
 
 Other
 -----
