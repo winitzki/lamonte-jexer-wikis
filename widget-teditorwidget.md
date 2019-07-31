@@ -6,6 +6,8 @@ TEditorWidget displays an editable text document.  It is unaware of scrolling be
 Screenshots
 -----------
 
+![editor_1](uploads/e3b47b29ac2924540467c037e7500704/editor_1.png)
+
 Examples
 --------
 
