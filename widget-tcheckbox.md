@@ -7,12 +7,13 @@ TCheckBox is an on/off checkbox with a label.  If the label has a mnemonic (e.g.
 Screenshots
 -----------
 
+![checkbox_1](uploads/c93bc5dea5f767010983c809756553ab/checkbox_1.png)
 
 Examples
 --------
 
 ```Java
-    addCheckBox(x, y, "C&heck me", false);
+addCheckBox(x, y, "C&heck me", false);
 ```
 
 The above will add a checkbox that will toggle when the user presses Alt-H.
