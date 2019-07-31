@@ -6,6 +6,8 @@ TExceptionDialog displays an exception and its stack trace to the user, and prov
 Screenshots
 -----------
 
+![exceptiondialog_1](uploads/99bfb6138eaa079c51a5234ff93ef572/exceptiondialog_1.png)
+
 Examples
 --------
 
