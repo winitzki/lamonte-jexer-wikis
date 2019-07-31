@@ -81,6 +81,7 @@ Widget Gallery
 * [TTableWindow](widget-ttablewindow)
 * [TTerminalWindow](widget-tterminalwindow)
 * [TText](widget-ttext)
+* [TTreeView](widget-ttreeview)
 * [TVScroller](widget-tvscroller)
 * [TWindow](widget-twindow)
 
