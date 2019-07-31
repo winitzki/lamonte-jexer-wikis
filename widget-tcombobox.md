@@ -6,9 +6,9 @@ TComboBox is a combobox that has a drop-down list and an edit field.  A TAction 
 Screenshots
 -----------
 
-![combobox_1](uploads/3f9872cf156289ae244e65bc8fa7680d/combobox_1.png)
+![combobox_1](uploads/f5a2799aab4ddfc67fab41e5772122e9/combobox_1.png)
 
-![combobox_2](uploads/2c4aeb88cc2ac89a30e32abf53cd1073/combobox_2.png)
+![combobox_2](uploads/2aa83c98d7b4eeee5c823d1b71677e7b/combobox_2.png)
 
 Examples
 --------
