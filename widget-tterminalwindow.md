@@ -30,7 +30,7 @@ Next we show a second instance of Jexer running inside a window.  The Jexer inst
 
 ![terminal_jexer_1](uploads/e5e8a2d7bd0b10fc6ff8d0b1fc9221bf/terminal_jexer_1.png)
 
-The terminal expects UTF-8, and when using one of the good [[fonts]] one can see proper box-drawing characters:
+The terminal expects UTF-8, and when using a font with the glyphs one will see proper box-drawing characters:
 
 ![terminal_utf8_1](uploads/cd1e749c788730d49e94cbaa715c1803/terminal_utf8_1.png)
 
