@@ -6,6 +6,10 @@ TMessageBox is a system-modal dialog with buttons for OK, Cancel, Yes, or No.
 Screenshots
 -----------
 
+![messagebox_1](uploads/d869bda995331fd9c814c70fdc43203f/messagebox_1.png)
+
+![messagebox_2](uploads/6ba07a232dc62648b2f2d9f15888c237/messagebox_2.png)
+
 Examples
 --------
 
