@@ -88,5 +88,6 @@ Widget Gallery
 Other
 -----
 
-* [Feature Wishlist](wishlist)
+* [Applications Wishlist](apps-wishlist)
+* [Jexer Features Wishlist](wishlist)
 * [TODOs for this Wiki](Wiki-TODO-List)
