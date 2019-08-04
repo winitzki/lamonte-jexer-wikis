@@ -1,7 +1,7 @@
 TTerminalWindow
 ===============
 
-TTerminalWindow is a full-featured ECMA-48/ISO 6429/ANSI X3.64 type console window, including a scrollback buffer.  It implements nearly all of VT100, VT102, and VT220 faithfully, and enough of XTERM to support terminfo-based applications and Jexer itself.  TTerminalWindow can spawn a login shell or run any arbitrary command in a shell window.
+TTerminalWindow is a full-featured ECMA-48/ISO 6429/ANSI X3.64 type console window, including a scrollback buffer.  It implements nearly all of VT100, VT102, and VT220 faithfully, and enough of XTERM to support terminfo-based applications and Jexer itself.  TTerminalWindow can spawn a login shell or run any arbitrary command in a shell window.  To the best of my knowledge, TTerminalWindow is also the only terminal widget available that can produce true double-width/double-height and sixel images while running itself inside xterm.
 
 ptypipe
 -------
@@ -38,7 +38,11 @@ The terminal's color palette matches CGA/EGA/VGA, with "dark yellow" showing as 
 
 ![terminal_vttest_1](uploads/46fec1da96953d53958865e51e9bd46e/terminal_vttest_1.png)
 
-The remaining screens show off Jexer's jexer.tterminal.ECMA48 vttest compliance.  We start with the VT100 special graphics characters correctly translated to Unicode:
+But if you really want some bling, check out Jexer running inside its own terminal widget with images and double-width characters:
+
+![jexer_sixel_in_sixel](uploads/af639740fd2777e16b224dbb71a78857/jexer_sixel_in_sixel.png)
+
+The remaining screens show off Jexer's jexer.tterminal.ECMA48 vttest compliance.  Beginning with the VT100 special graphics characters correctly translated to Unicode:
 
 ![terminal_vttest_2](uploads/1fd7a58c323ce8893f4d7554d7f376b2/terminal_vttest_2.png)
 
