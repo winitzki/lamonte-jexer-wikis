@@ -16,7 +16,7 @@ Most popular X11 terminals can run Jexer, but so far only [xterm](https://invisi
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |
 | xterm          | X11                | yes         | yes          | yes    |
-| jexer          | X11                | yes         | yes          | yes    |
+| jexer          | CLI, X11, Windows  | yes         | yes          | yes    |
 | lcxterm(3)     | CLI, Linux console | yes         | yes          | no     |
 | rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | alacritty(3)   | X11                | yes         | yes          | no     |
