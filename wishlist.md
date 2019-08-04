@@ -1,6 +1,12 @@
 Jexer Wishlist
 ==============
 
+* CJK / double-width support
+
+* Layout manager support
+
+* TField justification (left/right/center)
+
 * Cut and paste buffer
 
 * Drag and drop text support
