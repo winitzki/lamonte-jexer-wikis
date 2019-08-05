@@ -12,3 +12,5 @@ Jexer is intended to make the hard parts of xterm-like keyboard, mouse, and scre
 * Text-Based Window Manager - Jexer is a text-based window manager out of the box.  But with just a little time one could turn the [tiling window manager example](example-tiling-wm) into a true powerhouse.
 
 * File Manager - The [file viewer example](example-image-viewer) could be a starting point for a 'ranger' like file manager, but with sixel support for images.  Or one could build it into an orthodox drag-and-drop file manager like an 'mc' clone.
+
+* Terminal Client - Take Jexer's TTerminalWindow, add a protocol library like JSch, and one could have a true cross-platform sixel-supporting terminal emulator.
