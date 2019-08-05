@@ -16,13 +16,13 @@ Most popular X11 terminals can run Jexer, but so far only [xterm](https://invisi
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |
 | xterm          | X11                | yes         | yes          | yes    |
-| jexer          | CLI, X11, Windows  | yes         | yes          | yes    |
+| jexer(3)       | CLI, X11, Windows  | yes         | yes          | yes    |
+| mlterm         | X11                | yes         | yes          | yes    |
 | lcxterm(3)     | CLI, Linux console | yes         | yes          | no     |
 | rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | alacritty(3)   | X11                | yes         | yes          | no     |
 | gnome-terminal | X11                | yes         | yes          | no     |
 | xfce4-terminal | X11                | yes         | yes          | no     |
-| mlterm         | X11                | yes         | yes          | no(5)  |
 | aminal(3)      | X11                | yes         | no           | no     |
 | konsole        | X11                | yes         | no           | no     |
 | yakuake        | X11                | yes         | no           | no     |
@@ -41,7 +41,5 @@ Most popular X11 terminals can run Jexer, but so far only [xterm](https://invisi
 3 - Latest in repository.
 
 4 - Requires TERM=xterm-1003 before starting.
-
-5 - Opening image crashes terminal.
 
 When running on the raw Linux console, [LCXterm](https://gitlab.com/klamonte/lcxterm) or [Qodem](http://qodem.sourceforge.net) are required if one wishes to use the mouse.  [GPM](https://github.com/telmich/gpm) is also required.
