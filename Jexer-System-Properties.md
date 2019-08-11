@@ -37,3 +37,8 @@ jexer.ECMA48.sixel
 ------------------
 
 Used by jexer.backend.ECMA48Terminal.  If true, emit image data using sixel, otherwise show blank cells where images could be.  This is expensive in bandwidth, very expensive in CPU (especially for large images), and will leave artifacts on the screen if the terminal does not support sixel.  Default: true.
+
+jexer.ECMA48.sixelPaletteSize
+-----------------------------
+
+Used by jexer.backend.ECMA48Terminal.  Number of colors to use for sixel output.  Values are: 2 (black-and-white), 256, 512, 1024, or 2048.  Default: 1024.

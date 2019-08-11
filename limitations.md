@@ -3,6 +3,8 @@ Known Issues / Arbitrary Decisions
 
 Some arbitrary design decisions had to be made when either the obviously expected behavior did not happen or when a specification was ambiguous.  This section describes such issues.
 
+- Sixel output on the bottom row (usually the status line) will cause xterm to scroll the window.  This affects double / full-width characters (such as CJK) and images.
+
 - See jexer.tterminal.ECMA48 for more specifics of terminal emulation limitations.
 
 - TTerminalWindow uses cmd.exe on Windows.  Output will not be seen until enter is pressed, due to cmd.exe's use of line-oriented input (see the ENABLE_LINE_INPUT flag for GetConsoleMode() and SetConsoleMode()).
