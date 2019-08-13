@@ -62,7 +62,7 @@ VT52 sub-mode support.  Jexer is (to the best of my knowledge) the only terminal
 
 ![terminal_vttest_6](uploads/32d9df6af3f1d11d3ffffc5d700da690/terminal_vttest_6.png)
 
-Double-width support.  Jexer cannot yet display double-width and double-height characters, but it recognizes them correctly:
+Double-width support.  When TTerminalWindow is running against MultiScreen, it does not know if it has image support, so displays double-width and double-height characters with spaces rather than true double-width/height:
 
 ![terminal_vttest_7](uploads/76f420ceaace4c65bd4cb1f051e57fe4/terminal_vttest_7.png)
 
