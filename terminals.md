@@ -11,7 +11,7 @@ Jexer can use the following features of a terminal if available:
 Terminals
 ---------
 
-Most popular X11 terminals can run Jexer, but so far only [xterm](https://invisible-island.net/xterm/) supports all of Jexer's features.  The table below lists the terminals tested against Jexer recently:
+Most popular X11 terminals can run Jexer, but only a few support all of Jexer's features.  Jexer is developed against [xterm](https://invisible-island.net/xterm/) .  The table below lists the terminals tested against Jexer recently:
 
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |
