@@ -37,7 +37,7 @@ Location Of Key Features
 | terminal: sixel input    | tterminal.Sixel                                |
 | screen: output functions | backend.LogicalScreen                          |
 | screen: CJK output       | backend.GlyphMaker, backend.LogicalScreen.putFullwidthChar() |
-| screen: mouse cursor     | TApplication.invertMouse()                     |
+| screen: mouse cursor     | TApplication.invertCell()                      |
 | input: keyboard          | TKeypress, event.TKeypressEvent                |
 | input: mouse             | event.TMouseEvent                              |
 | widget hierarchy root    | TWidget                                        |
@@ -46,6 +46,8 @@ Location Of Key Features
 | cell colors              | bits.CellAttributes, bits.Color                |
 | cell character / image   | bits.Cell                                      |
 | CP437 to Unicode map     | bits.GraphicsChars                             |
+| Swing color palette      | backend.SwingTerminal.setDOSColors()           |
+| xterm color palette      | backend.ECMA48Terminal.rgbColor()              |
 
 
 Porting Sequence
