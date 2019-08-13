@@ -1,7 +1,3 @@
-Acknowledgments:
-
-  * nikiroo for TTable inspiration
-
 Internal Design:
 
   * Flow of events from Backend to TApplication to Screen
@@ -10,7 +6,6 @@ Internal Design:
 
 Platform Specifics:
 
-  * ~~Supported terminals list for ECMA48 backend~~
   * POSIX: using ptypipe to achieve resizable TTerminalWindows
   * Linux console: using LCXterm for mouse support
 
@@ -26,8 +21,8 @@ Widgets Gallery
 Howto's:
 
   * ~~Hello World~~
-  * Prototype tiling WM
-  * Prototype file viewer
+  * ~~Prototype tiling WM~~
+  * ~~Prototype file viewer~~
   * Dialog boxes: TMessageBox, TInputBox, TFileOpenDialog
   * MultiScreen / MultiBackend
   * Using TWindowBackend to run an application inside a window
