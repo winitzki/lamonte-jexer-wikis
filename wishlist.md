@@ -1,8 +1,6 @@
 Jexer Wishlist
 ==============
 
-* CJK / double-width support
-
 * Layout manager support
 
 * TField justification (left/right/center)
