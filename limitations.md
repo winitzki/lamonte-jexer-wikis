@@ -23,5 +23,5 @@ Some arbitrary design decisions had to be made when either the obviously expecte
 
 - jexer.backend.ECMA48Terminal calls 'stty' to perform the equivalent of cfmakeraw() when using System.in/out.  System.out is also (blindly!) put in 'stty sane cooked' mode when exiting.
 
-- jexer.backend.ECMA48Terminal uses a single palette containing MAX_COLOR_REGISTERS colors for all sixel images.  These colors are generated in the SixelPalette.makePalette() method with bits for hue, saturation, and luminance, and the two extremes set to pure black and pure white.  This provides a reasonable general-purpose palette light on CPU, but at a cost that individual images do not look as good as the terminal is actually capable of.
+- jexer.backend.ECMA48Terminal uses a single palette for all sixel images.  These colors are generated in the SixelPalette.makePalette() method with bits for hue, saturation, and luminance, and the two extremes set to pure black and pure white.  This provides a reasonable general-purpose palette light on CPU, but at a cost that individual images do not look as good as the terminal is actually capable of.
 
