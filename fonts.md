@@ -17,7 +17,7 @@ xterm -class UXterm -u8 -geometry 80x25 -fn -bolkhov-vga-medium-r-normal--16-160
 Terminus
 --------
 
-I run xterm with UNI-VGA like this:
+I run xterm with Terminus like this:
 
 ```
 xterm -class UXterm -u8 -geometry 80x25 -fn -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1
