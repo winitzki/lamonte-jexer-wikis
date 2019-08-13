@@ -48,6 +48,14 @@ Used by jexer.backend.ECMA48Terminal.  If true, emit T.416-style RGB
 colors for normal system colors.  This is expensive in bandwidth, and
 potentially terrible looking for non-xterms.  Default: false.
 
+jexer.ECMA48.wideCharImages
+---------------------------
+
+Used by jexer.backend.ECMA48Terminal.  If true, draw wide characters
+(fullwidth characters) as used by CJK and emoji as images.  This looks
+better on terminals loaded without a CJK font, but requires sixel
+support.  Default: true.
+
 jexer.ECMA48.sixel
 ------------------
 
