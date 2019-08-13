@@ -6,39 +6,87 @@ The following properties control features of Jexer:
 jexer.Swing
 -----------
 
-Used only by jexer.demos.Demo1 and jexer.demos.Demo4.  If true, use the Swing interface for the demo application.  Default: true on Windows (os.name starts with "Windows") and Mac (os.name starts with "Mac"), false on non-Windows and non-Mac platforms.
+Used only by jexer.demos.Demo1 and jexer.demos.Demo4.  If true, use
+the Swing interface for the demo application.  Default: true on
+Windows (os.name starts with "Windows") and Mac (os.name starts with
+"Mac"), false on non-Windows and non-Mac platforms.
 
 jexer.Swing.cursorStyle
 -----------------------
 
-Used by jexer.backend.SwingTerminal.  Selects the cursor style to draw.  Valid values are: underline, block, outline.  Default: underline.
+Used by jexer.backend.SwingTerminal.  Selects the cursor style to
+draw.  Valid values are: underline, block, outline.  Default:
+underline.
 
 jexer.Swing.tripleBuffer
 ------------------------
 
-Used by jexer.backend.SwingTerminal.  If true, use triple-buffering which reduces screen tearing but may also be slower to draw on slower systems.  If false, use naive Swing thread drawing, which may be faster on slower systems but also more likely to have screen tearing.  Default: true.
+Used by jexer.backend.SwingTerminal.  If true, use triple-buffering
+which reduces screen tearing but may also be slower to draw on slower
+systems.  If false, use naive Swing thread drawing, which may be
+faster on slower systems but also more likely to have screen tearing.
+Default: true.
 
 jexer.TTerminal.ptypipe
 -----------------------
 
-Used by jexer.TTerminalWindow.  If true, spawn shell using the 'ptypipe' utility rather than 'script'.  This permits terminals to resize with the window.  ptypipe is a separate C language utility, available at https://gitlab.com/klamonte/ptypipe.  Default: false.
+Used by jexer.TTerminalWindow.  If true, spawn shell using the
+'ptypipe' utility rather than 'script'.  This permits terminals to
+resize with the window.  ptypipe is a separate C language utility,
+available at https://gitlab.com/klamonte/ptypipe.  Default: false.
 
 jexer.TTerminal.closeOnExit
 ---------------------------
 
-Used by jexer.TTerminalWindow.  If true, close the window when the spawned shell exits.  Default: false.
+Used by jexer.TTerminalWindow.  If true, close the window when the
+spawned shell exits.  Default: false.
 
 jexer.ECMA48.rgbColor
 ---------------------
 
-Used by jexer.backend.ECMA48Terminal.  If true, emit T.416-style RGB colors for normal system colors.  This is expensive in bandwidth, and potentially terrible looking for non-xterms.  Default: false.
+Used by jexer.backend.ECMA48Terminal.  If true, emit T.416-style RGB
+colors for normal system colors.  This is expensive in bandwidth, and
+potentially terrible looking for non-xterms.  Default: false.
 
 jexer.ECMA48.sixel
 ------------------
 
-Used by jexer.backend.ECMA48Terminal.  If true, emit image data using sixel, otherwise show blank cells where images could be.  This is expensive in bandwidth, very expensive in CPU (especially for large images), and will leave artifacts on the screen if the terminal does not support sixel.  Default: true.
+Used by jexer.backend.ECMA48Terminal.  If true, emit image data using
+sixel, otherwise show blank cells where images could be.  This is
+expensive in bandwidth, very expensive in CPU (especially for large
+images), and will leave artifacts on the screen if the terminal does
+not support sixel.  Default: true.
 
 jexer.ECMA48.sixelPaletteSize
 -----------------------------
 
-Used by jexer.backend.ECMA48Terminal.  Number of colors to use for sixel output.  Values are: 2 (black-and-white), 256, 512, 1024, or 2048.  Default: 1024.
+Used by jexer.backend.ECMA48Terminal.  Number of colors to use for
+sixel output.  Values are: 2 (black-and-white), 256, 512, 1024, or
+2048.  Default: 1024.
+
+jexer.cjkFont.filename
+----------------------
+
+Used by jexer.backend.GlyphMaker.  Filename containing the font to use
+for CJK.  Filename must be on the classpath.  Default:
+NotoSansMonoCJKtc-Regular.otf
+
+Note that if the font is not found, NO ERROR IS REPORTED.
+
+jexer.emojiFont.filename
+------------------------
+
+Used by jexer.backend.GlyphMaker.  Filename containing the font to use
+for emojis.  Filename must be on the classpath.  Default:
+OpenSansEmoji.ttf
+
+Note that if the font is not found, NO ERROR IS REPORTED.
+
+jexer.fallbackFont.filename
+---------------------------
+
+Used by jexer.backend.GlyphMaker.  Filename containing the font to use
+as a last resort when no other font has the codepoint.  Filename must
+be on the classpath.  Default: ""
+
+Note that if the font is not found, NO ERROR IS REPORTED.
