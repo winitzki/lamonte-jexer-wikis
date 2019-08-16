@@ -3,13 +3,28 @@ System Properties
 
 The following properties control features of Jexer:
 
+jexer.textMouse
+---------------
+
+Used by jexer.TApplication and jexer.backend.SwingTerminal.  If true,
+display a text-based mouse pointer, otherwise do not.  (Also, the
+Swing backend will display the normal arrow mouse cursor when
+textMouse is false.)  Default: true.
+
+jexer.hideMouseWhenTyping
+-------------------------
+
+Used by jexer.TApplication.  If true, suppress the text-based mouse
+pointer after a user presses a key.  Mouse motion will restore the
+pointer.  Default: false.
+
 jexer.Swing
 -----------
 
-Used only by jexer.demos.Demo1 and jexer.demos.Demo4.  If true, use
-the Swing interface for the demo application.  Default: true on
-Windows (os.name starts with "Windows") and Mac (os.name starts with
-"Mac"), false on non-Windows and non-Mac platforms.
+Used by jexer.demos.Demo1 and jexer.demos.Demo4.  If true, use the
+Swing interface for the demo application.  Default: true on Windows
+(os.name starts with "Windows") and Mac (os.name starts with "Mac"),
+false on non-Windows and non-Mac platforms.
 
 jexer.Swing.cursorStyle
 -----------------------
@@ -17,6 +32,20 @@ jexer.Swing.cursorStyle
 Used by jexer.backend.SwingTerminal.  Selects the cursor style to
 draw.  Valid values are: underline, block, outline, and verticalBar.
 Default: underline.
+
+jexer.Swing.mouseStyle
+----------------------
+
+Used by jexer.backend.SwingTerminal.  Selects the mouse pointer
+(java.awt.Cursor) style to use.  Valid values are: none, default,
+hand, crosshair, move, and text.  Default: none.
+
+jexer.Swing.mouseImage
+----------------------
+
+Used by jexer.backend.SwingTerminal.  Filename containing an image to
+use as the mouse pointer.  Filename must be on the classpath.  The hot
+spot will be in the middle of the image.
 
 jexer.Swing.tripleBuffer
 ------------------------
@@ -40,6 +69,13 @@ jexer.TTerminal.closeOnExit
 
 Used by jexer.TTerminalWindow.  If true, close the window when the
 spawned shell exits.  Default: false.
+
+jexer.TTerminal.hideMouseWhenTyping
+-----------------------------------
+
+Used by jexer.TTerminalWindow.  If true, suppress the text-based mouse
+pointer after a user presses a key within a terminal window.  Mouse
+motion will restore the pointer.  Default: true.
 
 jexer.ECMA48.rgbColor
 ---------------------
