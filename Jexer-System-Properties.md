@@ -15,8 +15,8 @@ jexer.Swing.cursorStyle
 -----------------------
 
 Used by jexer.backend.SwingTerminal.  Selects the cursor style to
-draw.  Valid values are: underline, block, outline.  Default:
-underline.
+draw.  Valid values are: underline, block, outline, and verticalBar.
+Default: underline.
 
 jexer.Swing.tripleBuffer
 ------------------------
