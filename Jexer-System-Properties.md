@@ -1,7 +1,64 @@
 System Properties
 =================
 
-The following properties control features of Jexer:
+This document outlines the system properties that can be set to
+customize Jexer.  The table below summarizes the properties and
+default values, below which is a more detailed outline.
+
+| Property                  | Default | Description                            |
+| ------------------------- | ------- | -------------------------------------- |
+| jexer.textMouse           | true    | Show text mouse pointer                |
+| jexer.hideMouseWhenTyping | false   | Hide mouse on keystroke everywhere     |
+| jexer.Swing               |         | Demo: select backend                   |
+| jexer.Swing.cursorStyle   | underline | Swing: cursor style                  |
+| jexer.Swing.mouseStyle    | none    | Swing: mouse pointer selection         |
+| jexer.Swing.mouseImage    |         | Swing: image to use for mouse icon     |
+| jexer.Swing.tripleBuffer  | true    | Swing: use triple-buffering            |
+| jexer.Swing.color0        | #000000 | Swing: color for black                 |
+| jexer.Swing.color1        | #a80000 | Swing: color for red                   |
+| jexer.Swing.color2        | #00a800 | Swing: color for green                 |
+| jexer.Swing.color3        | #a85400 | Swing: color for yellow                |
+| jexer.Swing.color4        | #0000a8 | Swing: color for blue                  |
+| jexer.Swing.color5        | #a800a8 | Swing: color for magenta               |
+| jexer.Swing.color6        | #00a8a8 | Swing: color for cyan                  |
+| jexer.Swing.color7        | #a8a8a8 | Swing: color for white                 |
+| jexer.Swing.color8        | #545454 | Swing: color for black + bold          |
+| jexer.Swing.color9        | #fc5454 | Swing: color for red + bold            |
+| jexer.Swing.color10       | #54fc54 | Swing: color for green + bold          |
+| jexer.Swing.color11       | #fcfc54 | Swing: color for yellow + bold         |
+| jexer.Swing.color12       | #5454fc | Swing: color for blue + bold           |
+| jexer.Swing.color13       | #fc54fc | Swing: color for magenta + bold        |
+| jexer.Swing.color14       | #54fcfc | Swing: color for cyan + bold           |
+| jexer.Swing.color15       | #fcfcfc | Swing: color for white + bold          |
+| jexer.TEditor.hideMouseWhenTyping | true | Hide mouse on keystroke in text editor windows |
+| jexer.TTerminal.ptypipe   | false   | Use 'ptypipe' for terminal shell       |
+| jexer.TTerminal.closeOnExit | false | Close terminal window when shell exits |
+| jexer.TTerminal.hideMouseWhenTyping | Hide mouse on keystroke in terminal windows |
+| jexer.ECMA48.rgbColor     | false   | ECMA48: emit 24-bit RGB for system colors |
+| jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
+| jexer.ECMA48.sixel        | true    | ECMA48: draw images using sixel        |
+| jexer.ECMA48.sixelPaletteSize | 1024 | ECMA48: number of colors for sixel images |
+| jexer.ECMA48.color0       | #000000 | ECMA48: color for black                |
+| jexer.ECMA48.color1       | #a80000 | ECMA48: color for red                  |
+| jexer.ECMA48.color2       | #00a800 | ECMA48: color for green                |
+| jexer.ECMA48.color3       | #a85400 | ECMA48: color for yellow               |
+| jexer.ECMA48.color4       | #0000a8 | ECMA48: color for blue                 |
+| jexer.ECMA48.color5       | #a800a8 | ECMA48: color for magenta              |
+| jexer.ECMA48.color6       | #00a8a8 | ECMA48: color for cyan                 |
+| jexer.ECMA48.color7       | #a8a8a8 | ECMA48: color for white                |
+| jexer.ECMA48.color8       | #545454 | ECMA48: color for black + bold         |
+| jexer.ECMA48.color9       | #fc5454 | ECMA48: color for red + bold           |
+| jexer.ECMA48.color10      | #54fc54 | ECMA48: color for green + bold         |
+| jexer.ECMA48.color11      | #fcfc54 | ECMA48: color for yellow + bold        |
+| jexer.ECMA48.color12      | #5454fc | ECMA48: color for blue + bold          |
+| jexer.ECMA48.color13      | #fc54fc | ECMA48: color for magenta + bold       |
+| jexer.ECMA48.color14      | #54fcfc | ECMA48: color for cyan + bold          |
+| jexer.ECMA48.color15      | #fcfcfc | ECMA48: color for white + bold         |
+| jexer.cjkFont.filename    | NotoSansMonoCJKtc-Regular.otf | Font for CJK characters |
+| jexer.emojiFont.filename  | OpenSansEmoji.ttf | Font for emojis              |
+| jexer.fallbackFont.filename |       | Font to use when no other available font has a codepoint |
+
+
 
 jexer.textMouse
 ---------------
