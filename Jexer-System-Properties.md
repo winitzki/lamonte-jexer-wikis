@@ -33,7 +33,7 @@ default values, below which is a more detailed outline.
 | jexer.TEditor.hideMouseWhenTyping | true | Hide mouse on keystroke in text editor windows |
 | jexer.TTerminal.ptypipe   | false   | Use 'ptypipe' for terminal shell       |
 | jexer.TTerminal.closeOnExit | false | Close terminal window when shell exits |
-| jexer.TTerminal.hideMouseWhenTyping | Hide mouse on keystroke in terminal windows |
+| jexer.TTerminal.hideMouseWhenTyping | true | Hide mouse on keystroke in terminal windows |
 | jexer.ECMA48.rgbColor     | false   | ECMA48: emit 24-bit RGB for system colors |
 | jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
 | jexer.ECMA48.sixel        | true    | ECMA48: draw images using sixel        |
