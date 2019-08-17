@@ -56,6 +56,13 @@ systems.  If false, use naive Swing thread drawing, which may be
 faster on slower systems but also more likely to have screen tearing.
 Default: true.
 
+jexer.TEditor.hideMouseWhenTyping
+---------------------------------
+
+Used by jexer.TEditorWindow.  If true, suppress the text-based mouse
+pointer after a user presses a key within a text editor window.  Mouse
+motion will restore the pointer.  Default: true.
+
 jexer.TTerminal.ptypipe
 -----------------------
 
