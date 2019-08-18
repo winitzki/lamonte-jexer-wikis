@@ -38,6 +38,7 @@ Documentation
 * [Porting Jexer to another language.](porting)
 
 
+
 Examples
 --------
 
@@ -70,12 +71,14 @@ Widget Gallery
 * [TLabel](widget-tlabel)
 * [TList](widget-tlist)
 * [TMessageBox](widget-tmessagebox)
+* [TPanel](widget-tpanel)
 * [TPasswordField](widget-tpasswordfield)
 * [TProgressBar](widget-tprogressbar)
 * [TRadioGroup](widget-tradiogroup)
 * [TScrollableWidget](widget-tscrollablewidget)
 * [TScrollableWindow](widget-tscrollablewindow)
 * [TSpinner](widget-tspinner)
+* [TSplitPane](widget-tsplitpane)
 * [TStatusBar](widget-tstatusbar)
 * [TTableWidget](widget-ttablewidget)
 * [TTableWindow](widget-ttablewindow)
@@ -84,6 +87,18 @@ Widget Gallery
 * [TTreeView](widget-ttreeview)
 * [TVScroller](widget-tvscroller)
 * [TWindow](widget-twindow)
+
+
+Optional Layout Managers
+------------------------
+
+Jexer defaults to absolute positioning of elements within a window.
+However, additional layout managers that will respond correctly to
+window resizing events are available:
+
+* [BoxLayoutManager](layout-box)
+* [StretchLayoutManager](layout-stretch)
+
 
 Other
 -----
