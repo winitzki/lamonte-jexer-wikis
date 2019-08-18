@@ -82,6 +82,7 @@ Widget Gallery
 * [TStatusBar](widget-tstatusbar)
 * [TTableWidget](widget-ttablewidget)
 * [TTableWindow](widget-ttablewindow)
+* [TTerminalWidget](widget-tterminalwidget)
 * [TTerminalWindow](widget-tterminalwindow)
 * [TText](widget-ttext)
 * [TTreeView](widget-ttreeview)
