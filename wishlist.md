@@ -1,8 +1,6 @@
 Jexer Wishlist
 ==============
 
-* Layout manager support
-
 * TField justification (left/right/center)
 
 * Cut and paste buffer

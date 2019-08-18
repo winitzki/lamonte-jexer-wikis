@@ -9,6 +9,8 @@ default values, below which is a more detailed outline.
 | ------------------------- | ------- | -------------------------------------- |
 | jexer.textMouse           | true    | Show text mouse pointer                |
 | jexer.hideMouseWhenTyping | false   | Hide mouse on keystroke everywhere     |
+| jexer.hideMenuBar         | false   | Hide the pull-down menu                |
+| jexer.hideStatusBar       | false   | Hide the status bar                    |
 | jexer.Swing               |         | Demo: select backend                   |
 | jexer.Swing.cursorStyle   | underline | Swing: cursor style                  |
 | jexer.Swing.mouseStyle    | none    | Swing: mouse pointer selection         |
@@ -76,6 +78,20 @@ jexer.hideMouseWhenTyping
 Used by jexer.TApplication.  If true, suppress the text-based mouse
 pointer after a user presses a key.  Mouse motion will restore the
 pointer.  Default: false.
+
+jexer.hideMenuBar
+-----------------
+
+Used by jexer.TApplication.  If true, do not display the pull-down
+menu on the top row.  Menu keyboard accelerators will still work.
+Default: false.
+
+jexer.hideStatusBar
+-------------------
+
+Used by jexer.TApplication.  If true, do not display the status bar on
+the bottom row.  Status bar keyboard accelerators will still work.
+Default: false.
 
 jexer.Swing
 -----------
