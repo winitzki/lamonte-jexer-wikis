@@ -16,13 +16,14 @@ Most popular X11 terminals can run Jexer, but only a few support all of Jexer's 
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |
 | xterm          | X11                | yes         | yes          | yes    |
-| jexer(3)       | CLI, X11, Windows  | yes         | yes          | yes    |
+| jexer          | CLI, X11, Windows  | yes         | yes          | yes    |
 | mlterm         | X11                | yes         | yes          | yes    |
-| lcxterm(3)     | CLI, Linux console | yes         | yes          | no     |
-| rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | alacritty(3)   | X11                | yes         | yes          | no     |
 | gnome-terminal | X11                | yes         | yes          | no     |
+| lcxterm(3)     | CLI, Linux console | yes         | yes          | no     |
+| rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | xfce4-terminal | X11                | yes         | yes          | no     |
+| kitty(3)       | X11                | yes         | yes          | no     |
 | aminal(3)      | X11                | yes         | no           | no     |
 | konsole        | X11                | yes         | no           | no     |
 | yakuake        | X11                | yes         | no           | no     |

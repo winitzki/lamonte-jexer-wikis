@@ -16,6 +16,10 @@ another language.  To that end, the following things were done:
   read/write to its standard in/out (stdin/stdout), then it can be
   made to do everything Jexer can do.
 
+* Jexer is coded to be clear, not clever.  It uses only functions and
+  language features available in Java 1.6 to make it very easy to see
+  how it does its job.
+
 This document outlines the locations of Jexer's key features, and a
 potential roadmap for porting it to another language.  Jexer itself
 has gone through this process before: it started its life as a D
