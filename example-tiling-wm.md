@@ -16,3 +16,5 @@ horizontal/vertical splits in a multiplexer:
 
 The second example uses TSplitPanes to achieve true resizable
 horizontal/vertical splits with terminal widgets:
+
+![example_tilingwm2_1](uploads/7603381f82414ef9ae214bfcf759c064/example_tilingwm2_1.png)
