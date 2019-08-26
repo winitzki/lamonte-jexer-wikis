@@ -69,8 +69,8 @@ jexer.textMouse
 
 Used by jexer.TApplication and jexer.backend.SwingTerminal.  If true,
 display a text-based mouse pointer, otherwise do not.  (Also, the
-Swing backend will display the normal arrow mouse cursor when
-textMouse is false.)  Default: true.
+Swing backend will display the "hand" mouse cursor when textMouse is
+false.)  Default: true.
 
 jexer.hideMouseWhenTyping
 -------------------------
