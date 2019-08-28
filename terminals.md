@@ -4,19 +4,26 @@ Terminal Features
 Jexer can use the following features of a terminal if available:
 
 * Mouse clicks.
+
 * Mouse motion, including dragging and resizing windows.
+
 * 24-bit ("true color") RGB.
-* Image support via sixel.  (So far as I know, Jexer is the only text windowing system with sixel image support.)
+
+* Image support via sixel.  (So far as I know, Jexer is the only text
+  windowing system with sixel image support.)
+
 
 Terminals
 ---------
 
-Most popular X11 terminals can run Jexer, but only a few support all of Jexer's features.  Jexer is developed against [xterm](https://invisible-island.net/xterm/) .  The table below lists the terminals tested against Jexer recently:
+Most popular X11 terminals can run Jexer, but only a few support all
+of Jexer's features.  Jexer is developed against
+[xterm](https://invisible-island.net/xterm/) .  The table below lists
+the terminals tested against Jexer recently:
 
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |
 | xterm          | X11                | yes         | yes          | yes    |
-| jexer          | CLI, X11, Windows  | yes         | yes          | yes    |
 | mlterm         | X11                | yes         | yes          | yes    |
 | alacritty(3)   | X11                | yes         | yes          | no     |
 | gnome-terminal | X11                | yes         | yes          | no     |
@@ -24,6 +31,7 @@ Most popular X11 terminals can run Jexer, but only a few support all of Jexer's 
 | rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | xfce4-terminal | X11                | yes         | yes          | no     |
 | kitty(3)       | X11                | yes         | yes          | no     |
+| mintty         | Windows            | yes         | yes          | no(5)  |
 | aminal(3)      | X11                | yes         | no           | no     |
 | konsole        | X11                | yes         | no           | no     |
 | yakuake        | X11                | yes         | no           | no     |
@@ -43,4 +51,24 @@ Most popular X11 terminals can run Jexer, but only a few support all of Jexer's 
 
 4 - Requires TERM=xterm-1003 before starting.
 
-When running on the raw Linux console, [LCXterm](https://gitlab.com/klamonte/lcxterm) or [Qodem](http://qodem.sourceforge.net) are required if one wishes to use the mouse.  [GPM](https://github.com/telmich/gpm) is also required.
+5 - Images can crash terminal.
+
+When running on the raw Linux console,
+[LCXterm](https://gitlab.com/klamonte/lcxterm) or
+[Qodem](http://qodem.sourceforge.net) are required if one wishes to
+use the mouse.  [GPM](https://github.com/telmich/gpm) is also
+required.
+
+
+Terminal Widgets
+----------------
+
+The table below lists embeddable widgets tested against Jexer recently:
+
+| Terminal       | Language | Mouse Click | Mouse Cursor | Images | Link |
+| -------------- | -------- | ----------- | ------------ | ------ | ---- |
+| jexer (ECMA48) | Java     | yes         | yes          | yes    | https://gitlab.com/klamonte/jexer
+| upp-components Terminal | C++ | yes     | yes          | yes    | https://github.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
+| xterm.js     | TypeScript | ???         | ???          | ???    | https://xtermjs.org
+urwid | Python | ??? | ??? | ??? | https://github.com/urwid/urwid
+JediTerm | Java | yes | no | no | https://github.com/JetBrains/jediterm
