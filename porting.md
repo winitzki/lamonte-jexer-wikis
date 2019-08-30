@@ -168,9 +168,8 @@ terminal with sixel support:
    between the old and new mouse pointer rows, inclusive.
 
  * For a row that is updated, the text will be displayed first, then
-   the image. Adjacent image cells are collected into contiguous
-   blocks as you are seeing. These contiguous blocks are also cached,
-   which is a performance boost.
+   the image. For performance, adjacent image cells are collected into
+   contiguous blocks, and these contiguous blocks are cached.
 
 With the above stragegy, a sixel-supporting terminal is not required
 to ensure any images in its display are maintained or coherent in some
