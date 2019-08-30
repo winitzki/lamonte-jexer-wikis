@@ -144,7 +144,7 @@ to C functions.  The workarounds Jexer uses are summarized here:
 Sixel Output
 ------------
 
-Jexer uses of sixel for images, VT100 double-width/double-height, and
+Jexer uses sixel for images, VT100 double-width/double-height, and
 optionally font rendering for CJK/emoji.  Early on in building sixel
 support, it was discovered that if images are overwritten with other
 images or text cells, it could result in a corrupted display.  (More
