@@ -92,3 +92,86 @@ Porting Sequence
    (TPasswordField, TRadioButton, TCheckBox), but some are more
    complex (TTerminal, TTableWidget, TTreeView).
 
+
+
+Workarounds For POSIX C Functions
+---------------------------------
+
+Jexer has an explicit design goal not to call C functions directly, so
+that it can be a reference for languages that do not have easy access
+to C functions.  The workarounds Jexer uses are summarized here:
+
+* "stty size" is used in place of ioctl(TIOCGWINSZ), to determine the
+  number of rows and columns of the screen when running against
+  stdin/stdout (System.in/System.out).  Another option a language
+  could consider is the "CSI [ 18 t" sequence: most xterm-like
+  terminals will respond with a sequence containing the window rows
+  and columns.
+
+* "stty -ignbrk -brkint -parmrk -istrip -inlcr -igncr -icrnl -ixon
+  -opost -echo -echonl -icanon -isig -iexten -parenb cs8 min 1 <
+  /dev/tty" is used in place of tcgetattr() / cfmakeraw() /
+  tcsetattr() to put stdin/stdout in raw mode.
+
+* "stty sane cooked < /dev/tty" is used in place of calling
+  tcsetattr() to restore the original termios.
+
+* "script -qF /dev/null" (BSD) and "script -fqe /dev/null" (GNU) are
+  used in place of forkpty() to spawn terminal shell windows because
+  glibc puts stdin/stdout in buffered mode when it isn't a tty.
+
+* Using "script" for forkpty() works, but introduces the issue that
+  the shells inside terminal windows cannot detect the change when a
+  user resizes a TTerminalWidget / TTerminalWindow.  Typically one
+  would call ioctl(TIOCSWINSZ) for this purpose; Jexer instead uses
+  the [ptypipe](https://gitlab.com/klamonte/ptypipe) utility for this
+  case.  ptypipe spawns its arguments in a pty via forkpty(), and then
+  listens for "CSI 8 ; {rows} ; {cols} t" in its stdin, and if found
+  strips that out and calls ioctl(TIOCSWINSZ) instead.
+  TTerminalWidget has to know both to spawn "ptypipe" instead of
+  "script" and to issue the dtterm sequence to ptypipe when the user
+  resizes the window, so the "jexer.TTerminal.ptypipe" system property
+  must be set to "true".
+
+* A Windows version of ptypipe is planned in the future to use the
+  [Windows Pseudoconsole
+  functions](https://docs.microsoft.com/en-us/windows/console/creating-a-pseudoconsole-session)
+  to provide equivalent functionality of forkpty() (CreateProcess())
+  and ioctl(TIOCSWINSZ) (ResizePseudoConsole()).
+
+
+
+Sixel Output
+------------
+
+Jexer uses of sixel for images, VT100 double-width/double-height, and
+optionally font rendering for CJK/emoji.  Early on in building sixel
+support, it was discovered that if images are overwritten with other
+images or text cells, it could result in a corrupted display.  (More
+specifically, the text would always appear where and how it should be,
+but the image might leave artifacts in the region it was originally
+drawn in.)  Jexer developed a strategy that should work on any
+terminal with sixel support:
+
+* For text across the entire screen, only the cells that have changed
+  are updated. This is similar to ncurses.
+
+ * For rows that have image or text changes, and contain image data,
+   all images on that row are redrawn.  Text updates can thus distort
+   / destroy any images on the display, Jexer will be replacing them
+   anyway.
+
+ * The mouse cursor can move multiple rows in a single screen update,
+   and Jexer does not always know which rows containing image data
+   might have changed between the last time the mouse was displayed,
+   and its current position.  So it conservatively updates all rows
+   between the old and new mouse pointer rows, inclusive.
+
+ * For a row that is updated, the text will be displayed first, then
+   the image. Adjacent image cells are collected into contiguous
+   blocks as you are seeing. These contiguous blocks are also cached,
+   which is a performance boost.
+
+With the above stragegy, a sixel-supporting terminal is not required
+to ensure any images in its display are maintained or coherent in some
+manner after text has overwritten a portion of it.
