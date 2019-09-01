@@ -70,5 +70,8 @@ The table below lists embeddable widgets tested against Jexer recently:
 | jexer (ECMA48) | Java     | yes         | yes          | yes    | https://gitlab.com/klamonte/jexer
 | upp-components Terminal | C++ | yes     | yes          | yes    | https://github.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
 | xterm.js     | TypeScript | yes         | no           | no     | https://xtermjs.org
-urwid | Python | ??? | ??? | ??? | https://github.com/urwid/urwid
+urwid | Python | no | no | no | https://github.com/urwid/urwid
+gowid | Go | yes | yes | no(1) | https://github.com/gcla/gowid
 JediTerm | Java | yes | no | no | https://github.com/JetBrains/jediterm
+
+1 - Also fails to filter out sixel data, leaving garbage on screen.
