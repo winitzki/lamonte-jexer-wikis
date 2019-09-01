@@ -35,6 +35,7 @@ the terminals tested against Jexer recently:
 | aminal(3)      | X11                | yes         | no           | no     |
 | konsole        | X11                | yes         | no           | no     |
 | yakuake        | X11                | yes         | no           | no     |
+| Windows Terminal(6) | Windows       | no          | no           | no(2)  |
 | screen         | CLI                | yes(1)      | yes(1)       | no(2)  |
 | tmux           | CLI                | yes(1)      | yes(1)       | no     |
 | putty          | X11, Windows       | yes         | no           | no(2)  |
@@ -53,6 +54,9 @@ the terminals tested against Jexer recently:
 
 5 - Images can crash terminal.
 
+6 - Version 0.4.2382.0, on Windows 10.0.18362.30.  Tested against
+    WSL-1 Debian instance.
+
 When running on the raw Linux console,
 [LCXterm](https://gitlab.com/klamonte/lcxterm) or
 [Qodem](http://qodem.sourceforge.net) are required if one wishes to
@@ -68,10 +72,10 @@ The table below lists embeddable widgets tested against Jexer recently:
 | Terminal       | Language | Mouse Click | Mouse Cursor | Images | Link |
 | -------------- | -------- | ----------- | ------------ | ------ | ---- |
 | jexer (ECMA48) | Java     | yes         | yes          | yes    | https://gitlab.com/klamonte/jexer
-| upp-components Terminal | C++ | yes     | yes          | yes    | https://github.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
+| upp-components Terminal | C++ | yes     | yes          | yes    | https://gith| gowid | Go | yes | yes | no(1) | https://github.com/gcla/gowid
+ub.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
 | xterm.js     | TypeScript | yes         | no           | no     | https://xtermjs.org
-urwid | Python | no | no | no | https://github.com/urwid/urwid
-gowid | Go | yes | yes | no(1) | https://github.com/gcla/gowid
-JediTerm | Java | yes | no | no | https://github.com/JetBrains/jediterm
+| urwid | Python | no | no | no | https://github.com/urwid/urwid
+| JediTerm | Java | yes | no | no | https://github.com/JetBrains/jediterm
 
 1 - Also fails to filter out sixel data, leaving garbage on screen.
