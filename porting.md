@@ -167,8 +167,8 @@ terminal with sixel support:
    and its current position.  So it conservatively updates all rows
    between the old and new mouse pointer rows, inclusive.
 
- * For a row that is updated, the text will be displayed first, then
-   the image. For performance, adjacent image cells are collected into
+ * For a row that is updated, the image will be displayed first, then
+   the text. For performance, adjacent image cells are collected into
    contiguous blocks, and these contiguous blocks are cached.
 
 With the above stragegy, a sixel-supporting terminal is not required

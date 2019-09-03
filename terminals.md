@@ -27,11 +27,12 @@ the terminals tested against Jexer recently:
 | mlterm         | X11                | yes         | yes          | yes    |
 | alacritty(3)   | X11                | yes         | yes          | no     |
 | gnome-terminal | X11                | yes         | yes          | no     |
+| iTerm2         | Mac                | yes         | yes          | no(5)  |
+| kitty(3)       | X11                | yes         | yes          | no     |
 | lcxterm(3)     | CLI, Linux console | yes         | yes          | no     |
+| mintty         | Windows            | yes         | yes          | no(5)  |
 | rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | xfce4-terminal | X11                | yes         | yes          | no     |
-| kitty(3)       | X11                | yes         | yes          | no     |
-| mintty         | Windows            | yes         | yes          | no(5)  |
 | aminal(3)      | X11                | yes         | no           | no     |
 | konsole        | X11                | yes         | no           | no     |
 | yakuake        | X11                | yes         | no           | no     |
@@ -52,7 +53,7 @@ the terminals tested against Jexer recently:
 
 4 - Requires TERM=xterm-1003 before starting.
 
-5 - Images can crash terminal.
+5 - Sixel images can crash terminal.
 
 6 - Version 0.4.2382.0, on Windows 10.0.18362.30.  Tested against
     WSL-1 Debian instance.

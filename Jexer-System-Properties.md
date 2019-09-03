@@ -42,6 +42,7 @@ default values, below which is a more detailed outline.
 | jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
 | jexer.ECMA48.sixel        | true    | ECMA48: draw images using sixel        |
 | jexer.ECMA48.sixelPaletteSize | 1024 | ECMA48: number of colors for sixel images |
+| jexer.ECMA48.iTerm2Images | true    | ECMA48: draw images using iTerm2 protocol |
 | jexer.ECMA48.color0       | #000000 | ECMA48: color for black                |
 | jexer.ECMA48.color1       | #a80000 | ECMA48: color for red                  |
 | jexer.ECMA48.color2       | #00a800 | ECMA48: color for green                |
@@ -214,6 +215,16 @@ jexer.ECMA48.sixelPaletteSize
 Used by jexer.backend.ECMA48Terminal.  Number of colors to use for
 sixel output.  Values are: 2 (black-and-white), 256, 512, 1024, or
 2048.  Default: 1024.
+
+jexer.ECMA48.iTerm2Images
+-------------------------
+
+Used by jexer.backend.ECMA48Terminal.  If true, emit image data using
+iTerm2 image protocol, otherwise show blank cells where images could
+be.  This is expensive in bandwidth and will leave artifacts on the
+screen if the terminal does not support iTerm2 images.  If both
+jexer.ECMA48.sixel and jexer.ECMA48.iTerm2Images are true, images will
+be displayed in iTerm2 style only.  Default: false.
 
 jexer.cjkFont.filename
 ----------------------
