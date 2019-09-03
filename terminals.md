@@ -25,6 +25,7 @@ the terminals tested against Jexer recently:
 | -------------- | ------------------ | ----------- | ------------ | ------ |
 | xterm          | X11                | yes         | yes          | yes    |
 | mlterm         | X11                | yes         | yes          | yes    |
+| RLogin         | Windows            | yes         | yes          | yes    |
 | alacritty(3)   | X11                | yes         | yes          | no     |
 | gnome-terminal | X11                | yes         | yes          | no     |
 | iTerm2         | Mac                | yes         | yes          | no(5)  |
