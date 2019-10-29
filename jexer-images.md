@@ -17,8 +17,8 @@ and additional font support.
 The most widely supported image format for ECMA48-type terminals (DEC
 VT series, xterm, other terminal emulators) is sixel, a palette-based
 format with a typical limit of 256-1024 colors.  Sixel encoding is
-expensive in both CPU and bandwidth, and the color palette does not
-generalize well to all kinds of images.  Jexer therefore desires a
+expensive in both CPU and bandwidth, and a single color palette does
+not generalize well to all kinds of images.  Jexer therefore desires a
 24-bit color image format to overcome these limitations.
 
 A group including developers of several widely-used terminal emulators

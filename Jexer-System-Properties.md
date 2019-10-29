@@ -42,7 +42,8 @@ default values, below which is a more detailed outline.
 | jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
 | jexer.ECMA48.sixel        | true    | ECMA48: draw images using sixel        |
 | jexer.ECMA48.sixelPaletteSize | 1024 | ECMA48: number of colors for sixel images |
-| jexer.ECMA48.iTerm2Images | true    | ECMA48: draw images using iTerm2 protocol |
+| jexer.ECMA48.iTerm2Images | false   | ECMA48: draw images using iTerm2 protocol |
+| jexer.ECMA48.jexerImages  | jpg     | ECMA48: draw images using Jexer protocol |
 | jexer.ECMA48.color0       | #000000 | ECMA48: color for black                |
 | jexer.ECMA48.color1       | #a80000 | ECMA48: color for red                  |
 | jexer.ECMA48.color2       | #00a800 | ECMA48: color for green                |
@@ -225,6 +226,25 @@ be.  This is expensive in bandwidth and will leave artifacts on the
 screen if the terminal does not support iTerm2 images.  If both
 jexer.ECMA48.sixel and jexer.ECMA48.iTerm2Images are true, images will
 be displayed in iTerm2 style only.  Default: false.
+
+jexer.ECMA48.jexerImages
+------------------------
+
+Used by jexer.backend.ECMA48Terminal.  If not false, and the terminal
+reports support for Jexer images, then emit image data using Jexer's
+private image protocol, otherwise fallback to sixel or iTerm2 images
+if either of those is enabled.
+
+Value can be one of the following:
+
+| Value | Description                        |
+| ----- | ---------------------------------- |
+| false | Do not use Jexer image protocol    |
+| jpg   | Use Jexer protocol with JPG images |
+| png   | Use Jexer protocol with PNG images |
+| rgb   | Use Jexer protocol with RGG images |
+
+Default: jpg.
 
 jexer.cjkFont.filename
 ----------------------
