@@ -41,6 +41,7 @@ Documentation
 * [Recommended fonts for Xterm.](fonts)
 * [Known limitations.](limitations)
 * [Porting Jexer to another language.](porting)
+* [Jexer image protocol.](jexer-images)
 
 
 
