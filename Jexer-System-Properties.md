@@ -253,7 +253,7 @@ Value can be one of the following:
 | false | Do not use Jexer image protocol    |
 | jpg   | Use Jexer protocol with JPG images |
 | png   | Use Jexer protocol with PNG images |
-| rgb   | Use Jexer protocol with RGG images |
+| rgb   | Use Jexer protocol with RGB images |
 
 Default: jpg.
 
