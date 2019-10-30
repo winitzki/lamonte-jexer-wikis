@@ -42,6 +42,7 @@ default values, below which is a more detailed outline.
 | jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
 | jexer.ECMA48.sixel        | true    | ECMA48: draw images using sixel        |
 | jexer.ECMA48.sixelPaletteSize | 1024 | ECMA48: number of colors for sixel images |
+| jexer.ECMA48.sixelSharedPalette | true | ECMA48: shared palette for sixel images |
 | jexer.ECMA48.iTerm2Images | false   | ECMA48: draw images using iTerm2 protocol |
 | jexer.ECMA48.jexerImages  | jpg     | ECMA48: draw images using Jexer protocol |
 | jexer.ECMA48.color0       | #000000 | ECMA48: color for black                |
@@ -216,6 +217,16 @@ jexer.ECMA48.sixelPaletteSize
 Used by jexer.backend.ECMA48Terminal.  Number of colors to use for
 sixel output.  Values are: 2 (black-and-white), 256, 512, 1024, or
 2048.  Default: 1024.
+
+jexer.ECMA48.sixelSharedPalette
+-------------------------------
+
+Used by jexer.backend.ECMA48Terminal.  If true, use a single shared
+palette for sixel images, emitting the palette once on the first
+image; this feature requires terminal support for DECRST 1070 (the
+ability to disable "use private color registers for each graphic"
+flag).  If false, emit a palette with the used colors on every sixel
+image.  Default: true.
 
 jexer.ECMA48.iTerm2Images
 -------------------------

@@ -43,7 +43,7 @@ Detection
 
 Jexer detects terminal support for this protocol via the Primary
 Device Attributes (DA) / DECID (ESC Z, or 0x9A) sequence.  A terminal
-that support this feature will respond by including the parameter
+that supports this feature will respond by including the parameter
 "444" for images.  A recap of the parameters xterm supports is listed
 below, with the Jexer images feature response included:
 
@@ -149,4 +149,3 @@ be supported in the future.  At this time ImageIO supports the
 following formats: PNG, JPG, BMP, WBMP, and GIF.
 
 Jexer's ECMA48 backend always defines scroll=0, i.e. no scrolling.
-
