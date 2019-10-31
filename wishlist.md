@@ -20,8 +20,6 @@ Jexer Wishlist
 
 * Background image (Swing only): window, screen
 
-* Kitty image protocol
-
 * Declarative text configuration file (XML, YAML, something like that)
   to define the interface: menus, windows, widgets
 
