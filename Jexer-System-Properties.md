@@ -11,6 +11,7 @@ default values, below which is a more detailed outline.
 | jexer.hideMouseWhenTyping | false   | Hide mouse on keystroke everywhere     |
 | jexer.hideMenuBar         | false   | Hide the pull-down menu                |
 | jexer.hideStatusBar       | false   | Hide the status bar                    |
+| jexer.menuIcons           | false   | Use emoji icons in menu                |
 | jexer.Swing               |         | Demo: select backend                   |
 | jexer.Swing.cursorStyle   | underline | Swing: cursor style                  |
 | jexer.Swing.mouseStyle    | none    | Swing: mouse pointer selection         |
@@ -95,6 +96,12 @@ jexer.hideStatusBar
 Used by jexer.TApplication.  If true, do not display the status bar on
 the bottom row.  Status bar keyboard accelerators will still work.
 Default: false.
+
+jexer.menuIcons
+---------------
+
+Used by jexer.TApplication.  If true, support emoji icons next to
+drop-down menu items.  Default: false.
 
 jexer.Swing
 -----------
