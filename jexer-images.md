@@ -35,10 +35,10 @@ This document outlines Jexer's current solution.
 Design Goals
 ------------
 
-Jexer's primary goal as project is to expose the capabilities of stock
-xterm to applications.  If a way to achieve its aims exists in xterm's
-existing sequences, Jexer will use that.  But since xterm does not
-provide a non-palettized 24-bit image format, this design seeks to
+Jexer's primary goal as a project is to expose the capabilities of
+stock xterm to applications.  If a way to achieve its aims exists in
+xterm's existing sequences, Jexer will use that.  But since xterm does
+not provide a non-palettized 24-bit image format, this design seeks to
 align most closely with the functions xterm already does have.
 Therefore:
 
@@ -72,7 +72,7 @@ words, wire formats with fewer bytes to transfer won out strongly over
 image formats with fewer CPU cycles to compute.  It was later found
 that Jexer had an O(n^2) performance hit computing the termination of
 the OSC sequence; fixing that eliminated most of the performance gap
-between the image formates.  However, terminals written in other
+between the image formats.  However, terminals written in other
 languages have also experienced severe performance issues with long
 DCS/OSC sequences, and had to make significant changes to their state
 parser to handle the long sequences.  Because of these results,
@@ -194,12 +194,13 @@ Additional image formats may be supported in the future.  An
 application will always be able to detect image format support via
 this sequence:
 
-  1. Record current cursor position via DSR 6 (CSI 6 n).
+  1. Place the cursor at the top-left position on screen (1, 1).
 
   2. Draw a small image with scrolling enabled (Ps = 1).
 
-  3. Check cursor position via DSR 6.  If the cursor has moved, then
-     the image format is supported, and the image is on screen.
+  3. Check cursor position via DSR 6 (CSI 6 n).  If the cursor has
+     moved, then the image format is supported, and the image is on
+     screen.
 
 Jexer's ECMA48 backend always defines scroll=0, i.e. no scrolling.
 
