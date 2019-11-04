@@ -206,3 +206,12 @@ Jexer's ECMA48 backend always defines scroll=0, i.e. no scrolling.
 
 Jexer's terminal widget will discard (and not scroll) any PNG/JPG
 images that exceed 10000 pixels in width or height.
+
+
+References
+----------
+
+* [Xterm control sequences](https://invisible-island.net/xterm/ctlseqs/ctlseqs.html)
+
+* [VT510 Device Attribute responses](https://vt100.net/docs/vt510-rm/DA1.html)
+
