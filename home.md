@@ -35,13 +35,16 @@ Documentation
 -------------
 
 * [API docs](https://jexer.sourceforge.io/apidocs/api/index.html)
-* Jexer's [high-level design.](high-level-design)
-* Jexer [java.lang.System properties.](jexer system properties)
-* [Supported terminals.](terminals)
-* [Recommended fonts for Xterm.](fonts)
+* Writing Jexer applications:
+  - Jexer's [high-level design.](high-level-design)
+  - Jexer [java.lang.System properties.](jexer system properties)
+* Xterm backend:
+  - [Supported terminals.](terminals)
+  - [Recommended fonts for Xterm.](fonts)
+  - [Jexer image protocol.](jexer-images)
+  - [Other Jexer-specific escape sequences.](jexer-sequences)
 * [Known limitations.](limitations)
 * [Porting Jexer to another language.](porting)
-* [Jexer image protocol.](jexer-images)
 
 
 
