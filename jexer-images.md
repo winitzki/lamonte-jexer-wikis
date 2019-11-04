@@ -1,8 +1,6 @@
 Jexer Image Sequence
 ====================
 
-Version: 1
-
 
 
 Summary
@@ -25,16 +23,60 @@ A group including developers of several widely-used terminal emulators
 has been working on defining the needs and limitations for a standard
 that can be implemented in current-generation terminal emulators.  The
 discussion has been primarily captured here:
-https://gitlab.freedesktop.org/terminal-wg/specifications/issues/12
+https://gitlab.freedesktop.org/terminal-wg/specifications/issues/12 .
+As of this time of writing, no clear solution has emerged from that
+discussion, nor even agreement on what kind of data structure an image
+truly represents.
 
-This document outlines Jexer's current solution.  In researching this
-area, one interesting surprise discovery was that the CPU overhead for
-encoding/decoding image data to wire format had a much smaller effect
-on total throughout versus collecting the image data from the DCS/OSC
-sequence in the ECMA48 state parser.  In other words, wire formats
-with fewer bytes to transfer win out strongly over image formats with
-fewer CPU cycles to compute.  Because of this result, Jexer's default
-image format is JPG.
+This document outlines Jexer's current solution.
+
+
+
+Design Goals
+------------
+
+Jexer's primary goal as project is to expose the capabilities of stock
+xterm to applications.  If a way to achieve its aims exists in xterm's
+existing sequences, Jexer will use that.  But since xterm does not
+provide a non-palettized 24-bit image format, this design seeks to
+align most closely with the functions xterm already does have.
+Therefore:
+
+* Once the image has been decoded into a bitmap, place that bitmap on
+  screen exactly as already done for sixel, and move the cursor in a
+  way that is already supported by sixel.
+
+* Provide a way for an application to put pixel data on screen without
+  requiring a third-party image library.
+
+* Add no new flags to the state machine.
+
+* Detection of this feature implies only this single feature, not an
+  indication that the terminal has an assortment of multiple non-xterm
+  extensions.
+
+With the goals above, it is hoped that this protocol (or one informed
+by it) could someday be adopted by xterm itself and ncurses.
+
+
+
+Performance
+-----------
+
+
+In researching this area, one interesting surprise discovery was that
+the CPU overhead for encoding/decoding image data to wire format had a
+much smaller effect on total throughout versus collecting the image
+data from the DCS/OSC sequence in the ECMA48 state parser.  In other
+words, wire formats with fewer bytes to transfer won out strongly over
+image formats with fewer CPU cycles to compute.  It was later found
+that Jexer had an O(n^2) performance hit computing the termination of
+the OSC sequence; fixing that eliminated most of the performance gap
+between the image formates.  However, terminals written in other
+languages have also experienced severe performance issues with long
+DCS/OSC sequences, and had to make significant changes to their state
+parser to handle the long sequences.  Because of these results,
+Jexer's default image format for its ECMA48 backend is JPG.
 
 
 
@@ -64,7 +106,7 @@ below, with the Jexer images feature response included:
 | 2 2                         | ANSI color, e.g., VT525                    |
 | 2 8                         | Rectangular editing                        |
 | 2 9                         | ANSI text locator (i.e., DEC Locator mode) |
-| 4 4 4                       | Jexer Images Version 1                     |
+| 4 4 4                       | Jexer Images                               |
 
 
 
@@ -72,7 +114,7 @@ Wire Protocol
 -------------
 
 The following new sequences are used to transfer image data from
-Jexer's ECMA48Terminal backend to the terminal:
+Jexer's ECMA48 backend to the terminal:
 
 | Sequence                                   | Description                 |
 |--------------------------------------------|-----------------------------|
@@ -144,8 +186,22 @@ Implementation Notes
 
 Jexer's terminal widget is capable of decoding any image format
 supported by javax.image.ImageIO, but scans the file data for PNG and
-JPG headers before attempting decoding.  Additional image formats may
-be supported in the future.  At this time ImageIO supports the
-following formats: PNG, JPG, BMP, WBMP, and GIF.
+JPG headers before attempting decoding.  If the headers do not match
+the stated image type, then it is discarded.  At this time ImageIO
+supports the following formats: PNG, JPG, BMP, WBMP, and GIF.
+
+Additional image formats may be supported in the future.  An
+application will always be able to detect image format support via
+this sequence:
+
+  1. Record current cursor position via DSR 6 (CSI 6 n).
+
+  2. Draw a small image with scrolling enabled (Ps = 1).
+
+  3. Check cursor position via DSR 6.  If the cursor has moved, then
+     the image format is supported, and the image is on screen.
 
 Jexer's ECMA48 backend always defines scroll=0, i.e. no scrolling.
+
+Jexer's terminal widget will discard (and not scroll) any PNG/JPG
+images that exceed 10000 pixels in width or height.

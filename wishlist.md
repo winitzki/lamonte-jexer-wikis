@@ -1,9 +1,9 @@
 Jexer Wishlist
 ==============
 
-* TField justification (left/right/center)
+* Right-click context menus
 
-* Cut and paste buffer
+* TField justification (left/right/center)
 
 * Drag and drop text support
 
