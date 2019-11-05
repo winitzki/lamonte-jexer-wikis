@@ -1,7 +1,9 @@
 TCalendar
 =========
 
-TCalendar is a date picker widget.  It displays a calendar with the day's date highlighted, and can optionally execute a TAction when double-clicked or the user presses enter.
+TCalendar is a date picker widget.  It displays a calendar with the
+day's date highlighted, and can optionally execute a TAction when
+double-clicked or the user presses enter.
 
 
 Screenshots
@@ -23,3 +25,7 @@ TCalendar calendar = addCalendar(x, y,
 );
 ```
 
+API
+---
+
+[TCalendar API](https://jexer.sourceforge.io/apidocs/api/jexer/TCalendar.html)
