@@ -27,7 +27,7 @@ Images
 
 xterm provides sixel for bitmap images, but does not provide a
 non-palettized 24-bit image format.  Jexer's [image
-protocol](jexer-images.md) can be used to transmit basic 24-bit bitmap
+protocol](jexer-images) can be used to transmit basic 24-bit bitmap
 images.
 
 
