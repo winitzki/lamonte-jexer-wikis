@@ -15,3 +15,7 @@ Examples
 THScroller hScroller = new THScroller(this, 17, getHeight() - 2, getWidth() - 20);
 ```
 
+API
+---
+
+[THScroller API](https://jexer.sourceforge.io/apidocs/api/jexer/THScroller.html)

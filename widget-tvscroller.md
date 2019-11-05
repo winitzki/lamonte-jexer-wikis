@@ -12,6 +12,10 @@ Examples
 --------
 
 ```Java
-    TVScroller vScroller = new TVScroller(this, getWidth() - 2, 0, getHeight() - 2);
+TVScroller vScroller = new TVScroller(this, getWidth() - 2, 0, getHeight() - 2);
 ```
 
+API
+---
+
+[TVScroller API](https://jexer.sourceforge.io/apidocs/api/jexer/TVScroller.html)
