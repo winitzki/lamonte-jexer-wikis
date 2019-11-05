@@ -10,3 +10,12 @@ Screenshots
 
 Examples
 --------
+
+```Java
+addProgressBar(x, y, width, 0);
+```
+
+API
+---
+
+[TProgressBar API](https://jexer.sourceforge.io/apidocs/api/jexer/TProgressBar.html)
