@@ -1,7 +1,8 @@
 TText
 =====
 
-TText is a simple scrollable text area. It reflows automatically on resize.
+TText is a simple scrollable text area. It reflows automatically on
+resize.
 
 Screenshots
 -----------
@@ -12,3 +13,12 @@ Screenshots
 
 Examples
 --------
+
+```Java
+textField = addText("This is an example...", x, y, width, height);
+```
+
+API
+---
+
+[TText API](https://jexer.sourceforge.io/apidocs/api/jexer/TText.html)
