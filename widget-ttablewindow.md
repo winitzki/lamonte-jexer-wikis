@@ -1,7 +1,8 @@
 TTableWindow
 ============
 
-TTableWindow is used to display and edit simple two-dimensional tables of cells.
+TTableWindow is used to display and edit simple two-dimensional tables
+of cells.
 
 Screenshots
 -----------
@@ -12,3 +13,12 @@ Screenshots
 
 Examples
 --------
+
+```Java
+new TTableWindow(getApplication(), "TTableWindow Demo");
+```
+
+API
+---
+
+[TTableWindow API](https://jexer.sourceforge.io/apidocs/api/jexer/TTableWindow.html)
