@@ -38,25 +38,26 @@ Design Goals
 Jexer's primary goal as a project is to expose the capabilities of
 stock xterm to applications.  If a way to achieve its aims exists in
 xterm's existing sequences, Jexer will use that.  But since xterm does
-not provide a non-palettized 24-bit image format, this design seeks to
-align most closely with the functions xterm already does have.
-Therefore:
+not provide a non-palettized 24-bit image format, Jexer does something
+new.  However, this design is intended to align most closely with the
+functions xterm already implements.  Therefore:
 
-* Once the image has been decoded into a bitmap, place that bitmap on
-  screen exactly as already done for sixel, and move the cursor in a
-  way that is already supported by sixel.
+* Once the image has been decoded into a bitmap, the bitmap is placed
+  on screen exactly as already done for sixel, and the cursor is moved
+  in a way that is already supported by sixel.
 
-* Provide a way for an application to put pixel data on screen without
-  requiring a third-party image library.
+* A way is provided for an application to put pixel data on screen
+  without requiring a third-party image library.  This is to support
+  libraries like ncurses.
 
-* Add no new flags to the state machine.
+* No new flags are added to the state machine.
 
-* Detection of this feature implies only this single feature, not an
-  indication that the terminal has an assortment of multiple non-xterm
-  extensions.
+* Announcement of this feature implies only this single feature, not
+  an indication that the terminal has an assortment of multiple
+  non-xterm extensions.
 
 With the goals above, it is hoped that this protocol (or one informed
-by it) could someday be adopted by xterm itself and ncurses.
+by it) could feasibly be adopted by xterm itself and ncurses.
 
 
 
@@ -143,6 +144,9 @@ For the OSC 4 4 4 sequence:
   - All pixels in the text cells that are not covered by the image
     itself are set to black (RGB 0/0/0).
 
+  - Pixels that would be drawn to the right of the visible region on
+    screen are discarded.
+
   - If Ps is 1, then:
 
     a. The screen is scrolled up if the image overflows into the
@@ -162,9 +166,6 @@ For the OSC 4 4 4 sequence:
     c. The cursor's final position is at the same column and row as
        the starting cursor position, i.e. the cursor does not move at
        all.
-
-  - Pixels that would be drawn to the right of the visible region on
-    screen are discarded.
 
 * If the first parameter is 0, then {data} is a base64-encoded string
   of big-endian 8-bit red/blue/green values.  Every 3 octets denotes
@@ -186,7 +187,7 @@ Implementation Notes
 
 Jexer's terminal widget is capable of decoding any image format
 supported by javax.image.ImageIO, but scans the file data for PNG and
-JPG headers before attempting decoding.  If the headers do not match
+JPG headers before attempting decoding.  If the header does not match
 the stated image type, then it is discarded.  At this time ImageIO
 supports the following formats: PNG, JPG, BMP, WBMP, and GIF.
 
