@@ -1,7 +1,9 @@
 TExceptionDialog
 ================
 
-TExceptionDialog displays an exception and its stack trace to the user, and provides a means to save a troubleshooting report for support.
+TExceptionDialog displays an exception and its stack trace to the
+user, and provides a means to save a troubleshooting report for
+support.
 
 Screenshots
 -----------
@@ -20,3 +22,7 @@ try {
 }
 ```
 
+API
+---
+
+[TExceptionDialog API](https://jexer.sourceforge.io/apidocs/api/jexer/TExceptionDialog.html)

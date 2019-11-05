@@ -1,7 +1,9 @@
 TFontChooserWindow
 ==================
 
-TFontChooserWindow provides a dialog window for users to alter the running font.
+TFontChooserWindow provides a dialog window for users to alter the
+running font parameters (for Swing backend) and sixel properties (for
+Xterm backend) .
 
 Screenshots
 -----------
@@ -16,3 +18,8 @@ Examples
 ```Java
 new TFontChooserWindow(getApplication());
 ```
+
+API
+---
+
+[TFontChooserWindow API](https://jexer.sourceforge.io/apidocs/api/jexer/TFontChooserWindow.html)
