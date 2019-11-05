@@ -11,6 +11,10 @@ Screenshots
 
 ![calendar_1](uploads/0458653e9a6f2d865a76ca460e1924a3/calendar_1.png)
 
+In the screenshot above, the user can click on a day to change the
+date that calendar.getValue() will return, or on the arrows to change
+the month.
+
 Examples
 --------
 
