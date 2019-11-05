@@ -12,6 +12,8 @@ Screenshots
 
 ![fontchooser_2](uploads/8ffaa17bdaaa7aa1d9441f1a9c4c8998/fontchooser_2.png)
 
+![fontchooser_3](uploads/121464d439692537c52450848af17002/fontchooser_3.png)
+
 Examples
 --------
 
