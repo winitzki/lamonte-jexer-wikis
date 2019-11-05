@@ -10,7 +10,7 @@ executed when the text is changed.
 Screenshots
 -----------
 
-![tfield_1](uploads/ea046e3d0a4fa814ef69b172b0dae895/tfield_1.png)
+![field_1](uploads/6e64eaba6ccb625cacc8c186f56a110d/field_1.png)
 
 Examples
 --------
