@@ -28,3 +28,8 @@ if (messageBox(title, caption, TMessageBox.Type.OK | TMessageBox.Type.CANCEL).is
     // ... the user pressed OK, do stuff ...
 }
 ```
+
+API
+---
+
+[TMessageBox API](https://jexer.sourceforge.io/apidocs/api/jexer/TMessageBox.html)

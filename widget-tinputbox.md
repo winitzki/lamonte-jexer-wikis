@@ -1,7 +1,8 @@
 TInputBox
 =========
 
-TInputBox is a system-modal dialog with an OK button and a text input field.
+TInputBox is a system-modal dialog with an OK button and a text input
+field.
 
 Screenshots
 -----------
@@ -18,3 +19,7 @@ if (box.getText().equals("yes")) {
 }
 ```
 
+API
+---
+
+[TInputBox API](https://jexer.sourceforge.io/apidocs/api/jexer/TInputBox.html)

@@ -1,7 +1,9 @@
 TSpinner
 ========
 
-TSpinner implements a simple up/down spinner.
+TSpinner implements a simple up/down spinner.  "up" and "down"
+TActions can be specified to execute with each click on the up or down
+arrow, respectively.
 
 Screenshots
 -----------
@@ -10,3 +12,23 @@ Screenshots
 
 Examples
 --------
+
+```Java
+addSpinner(35 + dayOfWeekLabel.getWidth(), row - 1,
+    new TAction() {
+        public void DO() {
+            // Action to perform when the user clicks on the up arrow.
+        }
+    },
+    new TAction() {
+        public void DO() {
+            // Action to perform when the user clicks on the down arrow.
+        }
+    }
+);
+```
+
+API
+---
+
+[TSpinner API](https://jexer.sourceforge.io/apidocs/api/jexer/TSpinner.html)
