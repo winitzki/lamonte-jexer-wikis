@@ -12,3 +12,12 @@ Screenshots
 
 Examples
 --------
+
+```Java
+addPasswordField(x, y, width, false);
+```
+
+API
+---
+
+[TPasswordField API](https://jexer.sourceforge.io/apidocs/api/jexer/TPasswordField.html)
