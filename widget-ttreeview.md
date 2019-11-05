@@ -9,6 +9,8 @@ Screenshots
 
 ![treeview_1](uploads/e3c796eaa74a42752911ccd4d07ce569/treeview_1.png)
 
+![treeview_2](uploads/8c0d0a641842237a7a95699fddb6a72e/treeview_2.png)
+
 Examples
 --------
 
