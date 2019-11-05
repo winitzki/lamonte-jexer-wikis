@@ -12,5 +12,10 @@ Examples
 --------
 
 ```Java
-    editField = addEditor("", 0, 0, getWidth() - 2, getHeight() - 2);
+editField = addEditor("", 0, 0, getWidth() - 2, getHeight() - 2);
 ```
+
+API
+---
+
+[TEditorWidget API](https://jexer.sourceforge.io/apidocs/api/jexer/TEditorWidget.html)

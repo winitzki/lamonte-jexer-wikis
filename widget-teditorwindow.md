@@ -14,6 +14,10 @@ Examples
 --------
 
 ```Java
-    new TEditorWindow(getApplication());
+new TEditorWindow(getApplication());
 ```
 
+API
+---
+
+[TEditorWindow API](https://jexer.sourceforge.io/apidocs/api/jexer/TEditorWindow.html)
