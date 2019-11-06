@@ -24,7 +24,7 @@ TStatusBar is unique in many ways:
 Screenshots
 -----------
 
-
+![statusbar_1](uploads/5a556653f50f40fd64b0a2e66d38952f/statusbar_1.png)
 
 Examples
 --------
