@@ -10,7 +10,7 @@ list is navigated by keyboard.
 Screenshots
 -----------
 
-
+![list_1](uploads/45948f58c34247d0b90758a094b497b2/list_1.png)
 
 Examples
 --------
