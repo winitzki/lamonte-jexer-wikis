@@ -8,11 +8,11 @@ Jexer Wishlist
 * Drag and drop text support
 
 * Additional color themes:
-  * Dark / L33t
-  * Green / NoReallyElite
-  * Red/brown
-  * Monochrome
-  * OMGPonies
+  - Dark / L33t
+  - Green / NoReallyElite
+  - Red/brown
+  - Monochrome
+  - OMGPonies
 
 * Online help system
 
