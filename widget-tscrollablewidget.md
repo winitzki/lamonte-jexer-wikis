@@ -1,10 +1,11 @@
 TScrollableWidget
 =================
 
-TScrollableWidget is a convenience superclass for widgets that have scrollbars.
+TScrollableWidget is a convenience superclass for widgets that have
+scrollbars.  It is the superclass for TList, TTerminalWidget, TText,
+and TTreeViewWidget.
 
-Screenshots
------------
+API
+---
 
-Examples
---------
+[TScrollableWidget API](https://jexer.sourceforge.io/apidocs/api/jexer/TScrollableWidget.html)

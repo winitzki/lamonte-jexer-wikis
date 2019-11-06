@@ -1,10 +1,11 @@
 TScrollableWindow
 =================
 
-TScrollableWindow is a convenience superclass for windows that have scrollbars.
+TScrollableWindow is a convenience superclass for windows that have
+scrollbars.  It is the superclass for TEditorWindow, TImageWindow,
+TTableWindow, TTerminalWindow, and TTreeViewWindow.
 
-Screenshots
------------
+API
+---
 
-Examples
---------
+[TScrollableWindow API](https://jexer.sourceforge.io/apidocs/api/jexer/TScrollableWindow.html)
