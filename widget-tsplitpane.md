@@ -14,12 +14,12 @@ The JexerTilingWindowManager2 example shows vertical and horizontal
 splits with TTerminalWidgets.  The screen below shows a vertical
 split.
 
-
+![splitpane_1](uploads/edab27242e08d1fddcb36f767f9d7a8b/splitpane_1.png)
 
 The screen below shows two splits: a vertical split containing a
 horizontal split on its left, and a terminal on it right.
 
-
+![splitpane_2](uploads/596e765d2cd4c800108308bf7d5d6277/splitpane_2.png)
 
 Examples
 --------
