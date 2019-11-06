@@ -20,16 +20,18 @@ An image loaded in TImage is shown below.  This is with no
 scaling/stretching.  The pixels in the text cells that are not covered
 by the image are black (the border at right and bottom).
 
+![image_1](uploads/aed360cbce2c324aa72530b770cf661c/image_1.png)
 
 The same image, but now with TImage.Scale.STRETCH scaling is shown
 below.  All of the text cells are covered, but the image is distorted.
 
+![image_2](uploads/d9a7290f00f49a099068f33c00c79575/image_2.png)
 
 The same image, but now with TImage.Scale.SCALE scaling is shown
 below.  The image is made as large as possible to fit the text area
 maintaining its aspect ratio and centered.
 
-
+![image_3](uploads/c532f4eb2f6e87e1f80ef782d4a18c4b/image_3.png)
 
 Examples
 --------
