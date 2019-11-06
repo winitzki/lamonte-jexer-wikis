@@ -28,10 +28,17 @@ graph RL;
   WA --> UA(setActive false)
   UA --> UF(onUnfocus)
   UF --> WI[Window Inactive On Screen]
+  WI --> A
   WA --> H(onHide)
   H --> HW[Window Hidden]
   HW --> S(onShow)
   S --> F
+  WA --> PC(onPreClose)
+  PC --> UA2(setActive false)
+  UA2 --> UF2(onUnFocus)
+  UF2 --> G1(Window Removed From List)
+  G1 --> C(onClose)
+  C --> G2[Window Ready for Garbage Collection]
 ```
 
 Examples
