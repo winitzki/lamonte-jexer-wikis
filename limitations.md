@@ -26,11 +26,13 @@ ambiguous.  This section describes such issues.
 - Closing a TTerminalWindow without exiting the process inside it may
   result in a zombie 'script' process.
 
-- When using the Swing backend, and not using 'ptypipe', closing a
-  TTerminalWindow without exiting the process inside it may result in
-  a SIGTERM to the JVM causing it to crash.  The root cause is
-  currently unknown, but is potentially a bug in more recent releases
-  of the 'script' utility from the util-linux package.
+- When not using 'ptypipe', closing a TTerminalWindow without exiting
+  the process inside it may result in a SIGTERM to the JVM causing it
+  to crash.  The root cause is the 'script' utility calling kill(0,
+  SIGTERM) (which kills every process in the process group) when it
+  receives EPIPE from the JVM process.  Running 'setsid script' is a
+  workaround for Linux systems, which can be enabled by setting
+  "jexer.TTerminal.setsid" to "true".
 
 - TTerminalWindow can only notify the child process of changes in
   window size if using the 'ptypipe' utility, due to Java's lack of

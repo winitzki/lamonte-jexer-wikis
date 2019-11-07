@@ -37,6 +37,7 @@ default values, below which is a more detailed outline.
 | jexer.TTerminal.closeOnExit | false | Close terminal window when shell exits |
 | jexer.TTerminal.hideMouseWhenTyping | true | Hide mouse on keystroke in terminal windows |
 | jexer.TTerminal.ptypipe   | false   | Use 'ptypipe' for terminal shell       |
+| jexer.TTerminal.setsid    | true    | Run 'setsid script' for terminal shell |
 | jexer.TTerminal.shell     |    | Command to use for the terminal shell       |
 | jexer.TTerminal.cmdHack   | true    | For Windows, append Ctrl-J after Enter |
 | jexer.ECMA48.rgbColor     | false   | ECMA48: emit 24-bit RGB for system colors |
@@ -172,6 +173,18 @@ available at https://gitlab.com/klamonte/ptypipe.  Default: false.
 When jexer.TTerminal.ptypipe is true, and jexer.TTerminal.shell is not
 set, then the command used for the terminal shell is
 `ptypipe /bin/bash --login`
+
+jexer.TTerminal.setsid
+----------------------
+
+Used by jexer.TTerminalWindow.  If true, and os.name does not start
+with "Windows" or "Mac", spawn shell using the 'setsid' utility to run
+'script'.  This runs 'script' in a new process group, permitting
+closing the terminal window without crashing the JVM.  Default: true.
+
+When jexer.TTerminal.setsid is true, and jexer.TTerminal.shell is not
+set, and os.name does not start with "Windows" or "Mac", then the
+command used for the terminal shell is `setsid script -fqe /dev/null`
 
 jexer.TTerminal.shell
 ---------------------
