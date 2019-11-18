@@ -36,7 +36,7 @@ default values, below which is a more detailed outline.
 | jexer.TEditor.hideMouseWhenTyping | true | Hide mouse on keystroke in text editor windows |
 | jexer.TTerminal.closeOnExit | false | Close terminal window when shell exits |
 | jexer.TTerminal.hideMouseWhenTyping | true | Hide mouse on keystroke in terminal windows |
-| jexer.TTerminal.ptypipe   | false   | Use 'ptypipe' for terminal shell       |
+| jexer.TTerminal.ptypipe   | auto    | Use 'ptypipe' for terminal shell       |
 | jexer.TTerminal.setsid    | true    | Run 'setsid script' for terminal shell |
 | jexer.TTerminal.shell     |    | Command to use for the terminal shell       |
 | jexer.TTerminal.cmdHack   | true    | For Windows, append Ctrl-J after Enter |
@@ -165,10 +165,11 @@ motion will restore the pointer.  Default: true.
 jexer.TTerminal.ptypipe
 -----------------------
 
-Used by jexer.TTerminalWindow.  If true, spawn shell using the
-'ptypipe' utility rather than 'script'.  This permits terminals to
-resize with the window.  ptypipe is a separate C language utility,
-available at https://gitlab.com/klamonte/ptypipe.  Default: false.
+Used by jexer.TTerminalWindow.  If 'true', or if 'auto' and 'ptypipe'
+is on the PATH, then spawn shell using the 'ptypipe' utility rather
+than 'script'.  This permits terminals to resize with the window.
+ptypipe is a separate C language utility, available at
+https://gitlab.com/klamonte/ptypipe.  Default: auto.
 
 When jexer.TTerminal.ptypipe is true, and jexer.TTerminal.shell is not
 set, then the command used for the terminal shell is
