@@ -14,8 +14,6 @@ Jexer Wishlist
   - Monochrome
   - OMGPonies
 
-* Online help system
-
 * Transparency: window, screen
 
 * Background image (Swing only): window, screen
