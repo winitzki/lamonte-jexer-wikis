@@ -73,6 +73,7 @@ Widget Gallery
 * [TField](widget-tfield)
 * [TFileOpenBox](widget-tfileopenbox)
 * [TFontChooserWindow](widget-tfontchooserwindow)
+* [THelpWindow](widget-thelpwindow)
 * [THScroller](widget-thscroller)
 * [TImage](widget-timage)
 * [TImageWindow](widget-timagewindow)
