@@ -35,6 +35,7 @@ Documentation
 -------------
 
 * [API docs](https://jexer.sourceforge.io/apidocs/api/index.html)
+* [Project Goals and Design Guidelines](dev-standards)
 * Writing Jexer applications:
   - Jexer's [high-level design.](high-level-design)
   - Jexer [java.lang.System properties.](jexer system properties)
