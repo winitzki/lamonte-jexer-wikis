@@ -11,7 +11,7 @@ Jexer project goals are to:
   terminals to support more of xterm's features.
 
 * Be used across all classes of desktop/laptop/server hardware,
-  especially machines that are either not able or allowed to run
+  especially machines that are either not able or not allowed to run
   latest-gen GUI-based interfaces.
 
 * Be a resource for other text-based user interface projects,
