@@ -40,6 +40,7 @@ default values, below which is a more detailed outline.
 | jexer.TTerminal.setsid    | true    | Run 'setsid script' for terminal shell |
 | jexer.TTerminal.shell     |    | Command to use for the terminal shell       |
 | jexer.TTerminal.cmdHack   | true    | For Windows, append Ctrl-J after Enter |
+| jexer.ECMA48.modifyOtherKeys | false  | ECMA48: detect other modifiers       |
 | jexer.ECMA48.rgbColor     | false   | ECMA48: emit 24-bit RGB for system colors |
 | jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
 | jexer.ECMA48.sixel        | true    | ECMA48: draw images using sixel        |
@@ -207,6 +208,13 @@ Used by jexer.TTerminalWindow.  If true, append a line feed (Ctrl-J,
 hex 0x0a) after every enter/return keystroke (carriage return, Ctrl-M,
 hex 0x0d).  This is needed for cmd.exe, but might not be for other
 shells.  Default: true.
+
+jexer.ECMA48.modifyOtherKeys
+----------------------------
+
+Used by jexer.backend.ECMA48Terminal.  If true, enable the
+"modifyOtherKeys" feature of Xterm to detect things like Ctrl-Enter,
+Ctrl-Tab, Ctrl-Shift-A, and so on.  Default: false.
 
 jexer.ECMA48.rgbColor
 ---------------------
