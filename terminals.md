@@ -31,7 +31,7 @@ the terminals tested against Jexer recently:
 | iTerm2         | Mac                | yes         | yes          | no(5)  |
 | kitty(3)       | X11                | yes         | yes          | no     |
 | lcxterm(3)     | CLI, Linux console | yes         | yes          | no     |
-| mintty         | Windows            | yes         | yes          | no(5)  |
+| mintty         | Windows            | yes         | yes          | yes(7) |
 | rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | xfce4-terminal | X11                | yes         | yes          | no     |
 | aminal(3)      | X11                | yes         | no           | no     |
@@ -58,6 +58,9 @@ the terminals tested against Jexer recently:
 
 6 - Version 0.7.3291.0, on Windows 10.0.18362.30.  Tested against
     WSL-1 Debian instance.
+
+7 - Excessive flickering when previous images "bleed through" images
+    and text that has covered them.  But usable in general.
 
 When running on the raw Linux console,
 [LCXterm](https://gitlab.com/klamonte/lcxterm) or
