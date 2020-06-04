@@ -34,12 +34,14 @@ default values, below which is a more detailed outline.
 | jexer.Swing.color14       | #54fcfc | Swing: color for cyan + bold           |
 | jexer.Swing.color15       | #fcfcfc | Swing: color for white + bold          |
 | jexer.TEditor.hideMouseWhenTyping | true | Hide mouse on keystroke in text editor windows |
+| jexer.TEditor.margin      | 0       | Right column margin to highlight       |
 | jexer.TTerminal.closeOnExit | false | Close terminal window when shell exits |
 | jexer.TTerminal.hideMouseWhenTyping | true | Hide mouse on keystroke in terminal windows |
 | jexer.TTerminal.ptypipe   | auto    | Use 'ptypipe' for terminal shell       |
 | jexer.TTerminal.setsid    | true    | Run 'setsid script' for terminal shell |
 | jexer.TTerminal.shell     |    | Command to use for the terminal shell       |
 | jexer.TTerminal.cmdHack   | true    | For Windows, append Ctrl-J after Enter |
+| jexer.TTerminal.scrollbackMax | 2000 | Number of lines in scrollback buffer  |
 | jexer.ECMA48.modifyOtherKeys | false  | ECMA48: detect other modifiers       |
 | jexer.ECMA48.rgbColor     | false   | ECMA48: emit 24-bit RGB for system colors |
 | jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
@@ -150,6 +152,12 @@ Used by jexer.TEditorWindow.  If true, suppress the text-based mouse
 pointer after a user presses a key within a text editor window.  Mouse
 motion will restore the pointer.  Default: true.
 
+jexer.TEditor.margin
+--------------------
+
+Used by jexer.TEditorWindow.  If a positive integer, highlight the
+column in the text editor window.  Default: 0.
+
 jexer.TTerminal.closeOnExit
 ---------------------------
 
@@ -208,6 +216,12 @@ Used by jexer.TTerminalWindow.  If true, append a line feed (Ctrl-J,
 hex 0x0a) after every enter/return keystroke (carriage return, Ctrl-M,
 hex 0x0d).  This is needed for cmd.exe, but might not be for other
 shells.  Default: true.
+
+jexer.TTerminal.scrollbackMax
+-----------------------------
+
+Used by jexer.TTerminalWindow.  The number of lines in the scrollback
+(offscreen) buffer.  If 0, scrollback is unlimited.  Default: 2000.
 
 jexer.ECMA48.modifyOtherKeys
 ----------------------------

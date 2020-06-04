@@ -28,8 +28,9 @@ As of this time of writing, no clear solution has emerged from that
 discussion, nor even agreement on what kind of data structure an image
 truly represents.
 
-This document outlines Jexer's current solution.  Discussion is welcome
-[at this issue](https://gitlab.com/klamonte/jexer/issues/65) .
+This document outlines Jexer's current solution.  If a real standard
+emerges in the future, Jexer will switch to that as its preferred
+method.
 
 
 

@@ -1,8 +1,6 @@
 Jexer Wishlist
 ==============
 
-* Right-click context menus
-
 * TField justification (left/right/center)
 
 * Drag and drop text support
