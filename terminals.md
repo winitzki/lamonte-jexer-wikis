@@ -35,16 +35,18 @@ the terminals tested against Jexer recently:
 | rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | xfce4-terminal | X11                | yes         | yes          | no     |
 | aminal(3)      | X11                | yes         | no           | no     |
+| DomTerm        | Web                | yes         | no           | no(5)  |
 | konsole        | X11                | yes         | no           | no     |
 | yakuake        | X11                | yes         | no           | no     |
-| Windows Terminal(6) | Windows       | no          | no           | no(2)  |
 | screen         | CLI                | yes(1)      | yes(1)       | no(2)  |
 | tmux           | CLI                | yes(1)      | yes(1)       | no     |
 | putty          | X11, Windows       | yes         | no           | no(2)  |
-| Linux          | Linux console      | no          | no           | no(2)  |
 | qodem(3)       | CLI, Linux console | yes         | yes(4)       | no     |
 | qodem-x11(3)   | X11                | yes         | no           | no     |
+| wezterm        | X11, Windows       | no          | no           | yes(8) |
 | yaft           | Linux console (FB) | no          | no           | yes    |
+| Linux          | Linux console      | no          | no           | no(2)  |
+| Windows Terminal(6) | Windows       | no          | no           | no(2)  |
 
 1 - Requires mouse support from host terminal.
 
@@ -61,6 +63,8 @@ the terminals tested against Jexer recently:
 
 7 - Flickering, and previous images "bleed through" images and text
     that has covered them.  But usable in general.
+
+8 - iTerm2 images only, but functional.
 
 When running on the raw Linux console,
 [LCXterm](https://gitlab.com/klamonte/lcxterm) or
