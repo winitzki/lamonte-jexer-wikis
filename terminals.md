@@ -9,9 +9,12 @@ Jexer can use the following features of a terminal if available:
 
 * 24-bit ("true color") RGB.
 
-* Image support via sixel.  (So far as I know, Jexer is the only text
-  windowing system with sixel image support.)
-
+* Image support via sixel or iTerm2.  (So far as I know, Jexer is the
+  only text windowing system with image support.)  There is currently
+  [no documented
+  means](https://gitlab.com/gnachman/iterm2/issues/8940) of detecting
+  iTerm2 image support, so Jexer will only emit iTerm2 images when
+  jexer.ECMA48.iTerm2Images=true.
 
 Terminals
 ---------
