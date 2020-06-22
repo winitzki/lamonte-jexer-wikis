@@ -27,7 +27,7 @@ the terminals tested against Jexer recently:
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |
 | xterm          | X11                | yes         | yes          | yes    |
-| mintty(3)      | Windows            | yes         | yes          | yes    |
+| mintty         | Windows            | yes         | yes          | yes    |
 | mlterm         | X11                | yes         | yes          | yes    |
 | RLogin         | Windows            | yes         | yes          | yes    |
 | alacritty(3)   | X11                | yes         | yes          | no     |
