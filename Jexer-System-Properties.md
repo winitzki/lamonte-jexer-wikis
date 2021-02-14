@@ -35,6 +35,7 @@ default values, below which is a more detailed outline.
 | jexer.Swing.color15       | #fcfcfc | Swing: color for white + bold          |
 | jexer.TEditor.hideMouseWhenTyping | true | Hide mouse on keystroke in text editor windows |
 | jexer.TEditor.margin      | 0       | Right column margin to highlight       |
+| jexer.TEditor.autoWrap    | false   | Automatically wrap text to margin      |
 | jexer.TTerminal.closeOnExit | false | Close terminal window when shell exits |
 | jexer.TTerminal.hideMouseWhenTyping | true | Hide mouse on keystroke in terminal windows |
 | jexer.TTerminal.ptypipe   | auto    | Use 'ptypipe' for terminal shell       |
@@ -157,6 +158,12 @@ jexer.TEditor.margin
 
 Used by jexer.TEditorWindow.  If a positive integer, highlight the
 column in the text editor window.  Default: 0.
+
+jexer.TEditor.autoWrap
+----------------------
+
+Used by jexer.TEditorWindow.  If true, automatically wrap the text to
+fit inside the margin.  Default: false.
 
 jexer.TTerminal.closeOnExit
 ---------------------------

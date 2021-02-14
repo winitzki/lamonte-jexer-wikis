@@ -86,6 +86,7 @@ Widget Gallery
 * [TPasswordField](widget-tpasswordfield)
 * [TProgressBar](widget-tprogressbar)
 * [TRadioGroup](widget-tradiogroup)
+* [TScreenOptionsWindow](widget-tscreenoptionswindow)
 * [TScrollableWidget](widget-tscrollablewidget)
 * [TScrollableWindow](widget-tscrollablewindow)
 * [TSpinner](widget-tspinner)
