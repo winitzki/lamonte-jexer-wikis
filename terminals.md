@@ -30,7 +30,9 @@ the terminals tested against Jexer recently:
 | mintty         | Windows            | yes         | yes          | yes    |
 | mlterm         | X11                | yes         | yes          | yes    |
 | RLogin         | Windows            | yes         | yes          | yes    |
-| alacritty(3)   | X11                | yes         | yes          | no     |
+| alacritty(3b)  | X11                | yes         | yes          | yes    |
+| contour(3)     | X11                | yes         | yes          | yes    |
+| foot(3)        | Wayland            | yes         | yes          | yes    |
 | gnome-terminal | X11                | yes         | yes          | no     |
 | iTerm2         | Mac                | yes         | yes          | no(5)  |
 | kitty(3)       | X11                | yes         | yes          | no     |
@@ -57,6 +59,8 @@ the terminals tested against Jexer recently:
 2 - Also fails to filter out sixel data, leaving garbage on screen.
 
 3 - Latest in repository.
+
+3b - Latest in repository, using graphics PR branch.
 
 4 - Requires TERM=xterm-1003 before starting.
 
