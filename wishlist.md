@@ -10,6 +10,7 @@ Jexer Wishlist
   - Dark / L33t
   - Green / NoReallyElite
   - Red/brown
+  - Solarized
   - Monochrome
 
 * Transparency: window, screen
