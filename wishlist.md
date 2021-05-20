@@ -6,11 +6,11 @@ Jexer Wishlist
 * Drag and drop text support
 
 * Additional color themes:
+  - OMGPonies
   - Dark / L33t
   - Green / NoReallyElite
   - Red/brown
   - Monochrome
-  - OMGPonies
 
 * Transparency: window, screen
 
