@@ -66,7 +66,6 @@ by it) could feasibly be adopted by xterm itself and ncurses.
 Performance
 -----------
 
-
 In researching this area, one interesting surprise discovery was that
 the CPU overhead for encoding/decoding image data to wire format had a
 much smaller effect on total throughout versus collecting the image
@@ -217,4 +216,3 @@ References
 * [Xterm control sequences](https://invisible-island.net/xterm/ctlseqs/ctlseqs.html)
 
 * [VT510 Device Attribute responses](https://vt100.net/docs/vt510-rm/DA1.html)
-
