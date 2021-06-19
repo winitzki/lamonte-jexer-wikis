@@ -33,6 +33,7 @@ the terminals tested against Jexer recently:
 | alacritty(3b)  | X11                | yes         | yes          | yes    |
 | contour(3)     | X11                | yes         | yes          | yes    |
 | foot(3)        | Wayland            | yes         | yes          | yes    |
+| wezterm        | X11, Windows       | yes         | yes          | yes(7) |
 | gnome-terminal | X11                | yes         | yes          | no     |
 | iTerm2         | Mac                | yes         | yes          | no(5)  |
 | kitty(3)       | X11                | yes         | yes          | no     |
@@ -49,7 +50,6 @@ the terminals tested against Jexer recently:
 | putty          | X11, Windows       | yes         | no           | no(2)  |
 | qodem(3)       | CLI, Linux console | yes         | yes(4)       | no     |
 | qodem-x11(3)   | X11                | yes         | no           | no     |
-| wezterm        | X11, Windows       | no          | no           | yes(7) |
 | yaft           | Linux console (FB) | no          | no           | yes    |
 | Linux          | Linux console      | no          | no           | no(2)  |
 | MacTerm        | Mac                | no          | no           | no(2)  |
@@ -69,7 +69,7 @@ the terminals tested against Jexer recently:
 6 - Version 1.4.3243.0, on Windows 10.0.19041.1.  Tested against
     WSL-1 Debian instance.
 
-7 - iTerm2 images only, but functional.
+7 - Both sixel and iTerm2 images.
 
 When running on the raw Linux console,
 [LCXterm](https://gitlab.com/klamonte/lcxterm) or
