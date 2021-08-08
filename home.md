@@ -6,8 +6,8 @@ Borland's [Turbo Vision](http://en.wikipedia.org/wiki/Turbo_Vision)
 system.  Jexer works on both command-line [Xterm-like
 terminals](terminals) and on X11/Mac/Windows GUI systems using Swing.
 
-The screenshot below shows several open windows, widgets (buttons,
-input fields, checkboxes, radiobuttons), and a terminal window:
+The screenshot below shows several open windows, widgets, terminal
+windows, and image support:
 
 ![Screenshot](https://gitlab.com/klamonte/jexer/raw/master/screenshots/new_demo1.png)
 
