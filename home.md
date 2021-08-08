@@ -9,7 +9,7 @@ terminals](terminals) and on X11/Mac/Windows GUI systems using Swing.
 The screenshot below shows several open windows, widgets (buttons,
 input fields, checkboxes, radiobuttons), and a terminal window:
 
-![Screenshot](https://gitlab.com/klamonte/jexer/raw/master/screenshots/screenshot1.png)
+![Screenshot](https://gitlab.com/klamonte/jexer/raw/master/screenshots/new_demo1.png)
 
 
 
