@@ -12,6 +12,7 @@ Jexer Wishlist
   - Red/brown
   - Solarized
   - Monochrome
+  - Trans flag colors
 
 * Transparency: window, screen
 
