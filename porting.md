@@ -133,7 +133,7 @@ to C functions.  The workarounds Jexer uses are summarized here:
   resizes the window, so the "jexer.TTerminal.ptypipe" system property
   must be set to "true".
 
-* A Windows version of ptypipe is planned in the future to use the
+* A Windows version of ptypipe is desired in the future to use the
   [Windows Pseudoconsole
   functions](https://docs.microsoft.com/en-us/windows/console/creating-a-pseudoconsole-session)
   to provide equivalent functionality of forkpty() (CreateProcess())
