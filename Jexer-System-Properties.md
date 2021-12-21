@@ -17,6 +17,7 @@ default values, below which is a more detailed outline.
 | jexer.Swing.mouseStyle    | none    | Swing: mouse pointer selection         |
 | jexer.Swing.mouseImage    |         | Swing: image to use for mouse icon     |
 | jexer.Swing.tripleBuffer  | true    | Swing: use triple-buffering            |
+| jexer.Swing.imagesOverText| false   | Swing: transparent image pixels        |
 | jexer.Swing.color0        | #000000 | Swing: color for black                 |
 | jexer.Swing.color1        | #a80000 | Swing: color for red                   |
 | jexer.Swing.color2        | #00a800 | Swing: color for green                 |
@@ -145,6 +146,18 @@ which reduces screen tearing but may also be slower to draw on slower
 systems.  If false, use naive Swing thread drawing, which may be
 faster on slower systems but also more likely to have screen tearing.
 Default: true.
+
+jexer.Swing.imagesOverText
+--------------------------
+
+Used by jexer.backend.SwingTerminal.  If true, render text glyphs
+underneath images, allowing the using of text and images to both show
+in one cell.  This is _very_ cool looking, but currently hideously
+expensive when covering large parts of the screen with images or doing
+animations.  (And I have no shame in admitting that the notcurses
+project was the inspiration for me to finally try this out.  If you
+want to mix a lot of text-and-images, check out notcurses, it's really
+wicked.)  Default: false.
 
 jexer.TEditor.hideMouseWhenTyping
 ---------------------------------
