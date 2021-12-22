@@ -17,7 +17,7 @@ default values, below which is a more detailed outline.
 | jexer.Swing.mouseStyle    | none    | Swing: mouse pointer selection         |
 | jexer.Swing.mouseImage    |         | Swing: image to use for mouse icon     |
 | jexer.Swing.tripleBuffer  | true    | Swing: use triple-buffering            |
-| jexer.Swing.imagesOverText| false   | Swing: transparent image pixels        |
+| jexer.Swing.imagesOverText | false  | Swing: transparent image pixels        |
 | jexer.Swing.color0        | #000000 | Swing: color for black                 |
 | jexer.Swing.color1        | #a80000 | Swing: color for red                   |
 | jexer.Swing.color2        | #00a800 | Swing: color for green                 |
@@ -52,6 +52,7 @@ default values, below which is a more detailed outline.
 | jexer.ECMA48.sixelSharedPalette | true | ECMA48: shared palette for sixel images |
 | jexer.ECMA48.iTerm2Images | false   | ECMA48: draw images using iTerm2 protocol |
 | jexer.ECMA48.jexerImages  | jpg     | ECMA48: draw images using Jexer protocol |
+| jexer.ECMA48.imagesOverText | false | ECMA48: transparent image pixels       |
 | jexer.ECMA48.color0       | #000000 | ECMA48: color for black                |
 | jexer.ECMA48.color1       | #a80000 | ECMA48: color for red                  |
 | jexer.ECMA48.color2       | #00a800 | ECMA48: color for green                |
@@ -319,6 +320,18 @@ Value can be one of the following:
 | rgb   | Use Jexer protocol with RGB images |
 
 Default: jpg.
+
+jexer.ECMA48.imagesOverText
+---------------------------
+
+Used by jexer.backend.ECMA48Terminal.  If true, render text glyphs
+underneath images, allowing the using of text and images to both show
+in one cell.  This is _very_ cool looking, but currently hideously
+expensive when covering large parts of the screen with images or doing
+animations.  (And I have no shame in admitting that the notcurses
+project was the inspiration for me to finally try this out.  If you
+want to mix a lot of text-and-images, check out notcurses, it's really
+wicked.)  Default: false.
 
 jexer.cjkFont.filename
 ----------------------
