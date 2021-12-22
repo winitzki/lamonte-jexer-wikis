@@ -22,3 +22,5 @@ API
 ---
 
 [TText API](https://jexer.sourceforge.io/apidocs/api/jexer/TText.html)
+
+😻

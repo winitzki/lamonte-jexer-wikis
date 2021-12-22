@@ -85,3 +85,4 @@ Window Management
 
 A significant part of TApplication's code is managing multiple TWindows.
 
+😻

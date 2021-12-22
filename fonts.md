@@ -22,3 +22,5 @@ I run xterm with Terminus like this:
 ```
 xterm -class UXterm -u8 -geometry 80x25 -fn -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1
 ```
+
+😻

@@ -63,3 +63,5 @@ ambiguous.  This section describes such issues.
   This provides a reasonable general-purpose palette light on CPU, but
   at a cost that individual images do not look as good as the terminal
   is actually capable of.
+
+😻

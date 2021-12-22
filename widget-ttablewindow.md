@@ -22,3 +22,5 @@ API
 ---
 
 [TTableWindow API](https://jexer.sourceforge.io/apidocs/api/jexer/TTableWindow.html)
+
+😻

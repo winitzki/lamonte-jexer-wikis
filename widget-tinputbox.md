@@ -23,3 +23,5 @@ API
 ---
 
 [TInputBox API](https://jexer.sourceforge.io/apidocs/api/jexer/TInputBox.html)
+
+😻

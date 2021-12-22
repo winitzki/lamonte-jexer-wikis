@@ -26,3 +26,5 @@ API
 ---
 
 [TExceptionDialog API](https://jexer.sourceforge.io/apidocs/api/jexer/TExceptionDialog.html)
+
+😻

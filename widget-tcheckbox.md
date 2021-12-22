@@ -26,3 +26,5 @@ API
 ---
 
 [TCheckBox API](https://jexer.sourceforge.io/apidocs/api/jexer/TCheckBox.html)
+
+😻

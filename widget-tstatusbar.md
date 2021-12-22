@@ -41,3 +41,5 @@ API
 ---
 
 [TStatusBar API](https://jexer.sourceforge.io/apidocs/api/jexer/TStatusBar.html)
+
+😻

@@ -71,3 +71,5 @@ public class HelloWorld {
 This example demonstrates a core value of Jexer:  **Behave like Turbo Vision with as little hassle as possible.**
 
 Jexer's design deliberately does not resemble Swing.  Jexer is not trying to be a general-purpose widget toolkit that can be skinned to look like anything, it is trying to be a best-in-class user experience that gets you (as the developer) going quickly on writing your application logic.
+
+😻

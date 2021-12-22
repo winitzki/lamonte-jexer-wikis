@@ -35,3 +35,4 @@ are outlined here.
   TImage, you have most of the core UI elements needed for a
   mouse-supporting image-displaying text-based web browser.
 
+😻

@@ -62,3 +62,5 @@ ESC ^ showMousePointer ESC \
 A non-Jexer terminal should quietly consume these Privacy Messages as
 per the [VT320
 specification](https://vt100.net/docs/vt320-uu/appendixe.html).
+
+😻

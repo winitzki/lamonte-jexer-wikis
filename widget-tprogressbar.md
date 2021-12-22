@@ -19,3 +19,5 @@ API
 ---
 
 [TProgressBar API](https://jexer.sourceforge.io/apidocs/api/jexer/TProgressBar.html)
+
+😻

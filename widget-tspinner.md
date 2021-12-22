@@ -32,3 +32,5 @@ API
 ---
 
 [TSpinner API](https://jexer.sourceforge.io/apidocs/api/jexer/TSpinner.html)
+
+😻
