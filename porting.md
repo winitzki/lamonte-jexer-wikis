@@ -42,6 +42,7 @@ Location Of Key Features
 | screen: output functions | backend.LogicalScreen                          |
 | screen: CJK output       | backend.GlyphMaker, backend.LogicalScreen.putFullwidthChar() |
 | screen: mouse cursor     | TApplication.invertCell()                      |
+| screen: pixel-based ops  | tackboard.Tackboard.draw()                     |
 | input: keyboard          | TKeypress, event.TKeypressEvent                |
 | input: mouse             | event.TMouseEvent                              |
 | widget hierarchy root    | TWidget                                        |
@@ -63,19 +64,24 @@ Porting Sequence
    on, mouse and keyboard input, and raw termios.  If you don't want a
    full windowing system, you can stop here.
 
-2. Basic windowing system.  Port TWidget, TWindow, Backend,
+2. If you want pixel-based logic rather than (or in addition to) text
+   cell-based, port the tackboard package classes.  These are entirely
+   unaware of the windowing system, and can place bitmaps anywhere on
+   screen.
+
+3. Basic windowing system.  Port TWidget, TWindow, Backend,
    GenericBackend, ECMA48Backend, and TApplication.  In TApplication,
    strip out the menu management and secondary widget handler code.
    In TWidget, comment out the convenvience widget constructors
    (addLabel, addField, etc.) for now.
 
-3. Add some widgets.  Port TLabel, TButton, and TField.  Build a demo
+4. Add some widgets.  Port TLabel, TButton, and TField.  Build a demo
    application with static text, buttons, and editable text.
 
-4. Add menus.  Port TMenu, TMenuItem, etc.  Put the menu handling back
+5. Add menus.  Port TMenu, TMenuItem, etc.  Put the menu handling back
    into TApplication.
 
-5. Add system-modal widgets.  Port TMessageBox, TInputBox, and
+6. Add system-modal widgets.  Port TMessageBox, TInputBox, and
    TFileOpenBox, and modify TApplication's primary/secondary event
    handlers.  System-modal widgets are very handy because they permit
    code in the primary thread to pause, ask for input (handled by the
@@ -87,7 +93,7 @@ Porting Sequence
    two like Jexer.  Regardless, this may take some effort to work out
    the kinks.
 
-6. Add the remaining widgets at leisure.  Pick and choose which
+7. Add the remaining widgets at leisure.  Pick and choose which
    widgets you want to have, and port them.  Many are small and easy
    (TPasswordField, TRadioButton, TCheckBox), but some are more
    complex (TTerminal, TTableWidget, TTreeView).
@@ -144,14 +150,14 @@ to C functions.  The workarounds Jexer uses are summarized here:
 Sixel Output
 ------------
 
-Jexer uses sixel for images, VT100 double-width/double-height, and
-optionally font rendering for CJK/emoji.  Early on in building sixel
-support, it was discovered that if images are overwritten with other
-images or text cells, it could result in a corrupted display.  (More
-specifically, the text would always appear where and how it should be,
-but the image might leave artifacts in the region it was originally
-drawn in.)  Jexer developed a strategy that should work on any
-terminal with sixel support:
+Jexer can use sixel, iTerm2, and Jexer image formats for: images,
+VT100 double-width/double-height, and optionally font rendering for
+CJK/emoji.  Early on in building sixel support, it was discovered that
+if images are overwritten with other images or text cells, it could
+result in a corrupted display.  (More specifically, the text would
+always appear where and how it should be, but the image might leave
+artifacts in the region it was originally drawn in.)  Jexer developed
+a strategy that should work on any terminal with sixel/image support:
 
 * For text across the entire screen, only the cells that have changed
   are updated. This is similar to ncurses.
