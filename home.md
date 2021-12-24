@@ -39,6 +39,7 @@ Documentation
 * Writing Jexer applications:
   - Jexer's [high-level design.](high-level-design)
   - Jexer [java.lang.System properties.](jexer system properties)
+  - Notes on [pixel-based functions.](pixel-operations)
 * Xterm backend:
   - [Supported terminals.](terminals)
   - [Recommended fonts for Xterm.](fonts)
