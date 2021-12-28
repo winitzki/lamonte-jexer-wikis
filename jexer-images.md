@@ -78,7 +78,9 @@ between the image formats.  However, terminals written in other
 languages have also experienced severe performance issues with long
 DCS/OSC sequences, and had to make significant changes to their state
 parser to handle the long sequences.  Because of these results,
-Jexer's default image format for its ECMA48 backend is JPG.
+Jexer's default image format for its ECMA48 backend for a couple years
+was JPG.  Now it is PNG due to the significant visual artifacts of
+JPG.
 
 
 

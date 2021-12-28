@@ -51,7 +51,7 @@ default values, below which is a more detailed outline.
 | jexer.ECMA48.sixelPaletteSize | 1024 | ECMA48: number of colors for sixel images |
 | jexer.ECMA48.sixelSharedPalette | true | ECMA48: shared palette for sixel images |
 | jexer.ECMA48.iTerm2Images | false   | ECMA48: draw images using iTerm2 protocol |
-| jexer.ECMA48.jexerImages  | jpg     | ECMA48: draw images using Jexer protocol |
+| jexer.ECMA48.jexerImages  | png     | ECMA48: draw images using Jexer protocol |
 | jexer.ECMA48.imagesOverText | false | ECMA48: transparent image pixels       |
 | jexer.ECMA48.color0       | #000000 | ECMA48: color for black                |
 | jexer.ECMA48.color1       | #a80000 | ECMA48: color for red                  |
@@ -319,7 +319,7 @@ Value can be one of the following:
 | png   | Use Jexer protocol with PNG images |
 | rgb   | Use Jexer protocol with RGB images |
 
-Default: jpg.
+Default: png.
 
 jexer.ECMA48.imagesOverText
 ---------------------------
