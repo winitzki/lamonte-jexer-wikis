@@ -5,7 +5,10 @@ Jexer can use the following features of a terminal if available:
 
 * Mouse clicks.
 
-* Mouse motion, including dragging and resizing windows.
+* Mouse motion, including dragging and resizing windows, and
+  SGR-Pixels mode (1016).
+  [DECRQM/DECRPM](https://vt100.net/docs/vt510-rm/DECRQM.html) is used
+  to detect SGR-Pixels support.
 
 * 24-bit ("true color") RGB.
 
@@ -13,16 +16,20 @@ Jexer can use the following features of a terminal if available:
   first text windowing system with image support.)  There is currently
   [no documented
   means](https://gitlab.com/gnachman/iterm2/issues/8940) of detecting
-  iTerm2 image support, so Jexer will only emit iTerm2 images when
-  jexer.ECMA48.iTerm2Images=true.
+  iTerm2 image support, so Jexer will emit iTerm2 images when
+  jexer.ECMA48.iTerm2Images=true, or when it detects (via XTVERSION)
+  WezTerm, mintty, or iTerm2.  (Note that I cannot easily test iTerm2
+  itself; the last time I tried it it did not fare well with either
+  sixel or iTerm2 images.)
 
 Terminals
 ---------
 
 Most popular X11 terminals can run Jexer, but only a few support all
-of Jexer's features.  Jexer is developed against
-[xterm](https://invisible-island.net/xterm/) .  The table below lists
-the terminals tested against Jexer recently:
+of Jexer's features.  Jexer is actively developed against
+[xterm](https://invisible-island.net/xterm/) and
+[wezterm](https://wezfurlong.org/wezterm/) .  The table below lists
+the terminals last tested against Jexer:
 
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |

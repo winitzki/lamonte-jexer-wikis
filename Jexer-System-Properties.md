@@ -154,11 +154,11 @@ jexer.Swing.imagesOverText
 Used by jexer.backend.SwingTerminal.  If true, render text glyphs
 underneath images, allowing the using of text and images to both show
 in one cell.  This is _very_ cool looking, but currently hideously
-expensive when covering large parts of the screen with images or doing
-animations.  (And I have no shame in admitting that the notcurses
-project was the inspiration for me to finally try this out.  If you
-want to mix a lot of text-and-images, check out notcurses, it's really
-wicked.)  Default: false.
+expensive when covering large parts of the screen or doing animations
+with partially-transparent images.  (And I have no shame in admitting
+that the notcurses project was the inspiration for me to finally try
+this out.  If you want to mix a lot of text-and-images, check out
+notcurses, it's really wicked.)  Default: false.
 
 jexer.TEditor.hideMouseWhenTyping
 ---------------------------------
@@ -324,14 +324,13 @@ Default: jpg.
 jexer.ECMA48.imagesOverText
 ---------------------------
 
-Used by jexer.backend.ECMA48Terminal.  If true, render text glyphs
+Used by jexer.backend.ECMATerminal.  If true, render text glyphs
 underneath images, allowing the using of text and images to both show
-in one cell.  This is _very_ cool looking, but currently hideously
-expensive when covering large parts of the screen with images or doing
-animations.  (And I have no shame in admitting that the notcurses
-project was the inspiration for me to finally try this out.  If you
-want to mix a lot of text-and-images, check out notcurses, it's really
-wicked.)  Default: false.
+in one cell.  Jexer cannot know the terminal's font, so glyphs
+rendered under images may look odd, even if still usable.  If false,
+then the text background color (or what Jexer thinks is the background
+color) is emitted underneath the image, which is much faster and looks
+better.  Default: false.
 
 jexer.cjkFont.filename
 ----------------------
