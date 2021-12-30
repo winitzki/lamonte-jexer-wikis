@@ -14,11 +14,13 @@ Jexer Wishlist
   - Monochrome
   - Trans flag colors
 
-* Transparency: window, screen
-
-* Background image (Swing only): window, screen
+* Alpha transparency: window, screen
 
 * Declarative text configuration file (XML, YAML, something like that)
   to define the interface: menus, windows, widgets
 
 * Examples using other JVM languages: Kotlin, Clojure
+
+* AWT Toolkit to run AWT/Swing from within a terminal emulator
+
+😻
