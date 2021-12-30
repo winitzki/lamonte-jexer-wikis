@@ -33,7 +33,7 @@ Location Of Key Features
 | xterm: mouse input       | backend.ECMA48Terminal.parseMouse()            |
 | xterm: mouse input (SGR) | backend.ECMA48Terminal.parseMouseSGR()         |
 | xterm: keyboard input    | backend.ECMA48Terminal.processChar()           |
-| xterm: sixel output      | backend.ECMA48Terminal.SixelEncoder            |
+| xterm: sixel output      | backend.SixelEncoder                           |
 | xterm: set raw/cooked termios | backend.ECMA48Terminal.doStty()           |
 | xterm: get screen size   | backend.TTYSessionInfo.sttyWindowSize()        |
 | xterm: screen output     | backend.ECMA48Terminal.flushString()           |
