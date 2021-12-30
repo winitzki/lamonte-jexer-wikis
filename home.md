@@ -46,7 +46,7 @@ Documentation
   - [Jexer image protocol.](jexer-images)
   - [Other Jexer-specific escape sequences.](jexer-sequences)
 * [Known limitations.](limitations)
-* [Latest Release Announcement](latest-release)
+* [Latest Release Announcement.](latest-release)
 * [Porting Jexer to another language.](porting)
 
 
