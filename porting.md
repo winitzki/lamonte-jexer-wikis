@@ -33,12 +33,12 @@ Location Of Key Features
 | xterm: mouse input       | backend.ECMA48Terminal.parseMouse()            |
 | xterm: mouse input (SGR) | backend.ECMA48Terminal.parseMouseSGR()         |
 | xterm: keyboard input    | backend.ECMA48Terminal.processChar()           |
-| xterm: sixel output      | backend.ECMA48Terminal.toSixel(), SixelPalette |
+| xterm: sixel output      | backend.ECMA48Terminal.SixelEncoder            |
 | xterm: set raw/cooked termios | backend.ECMA48Terminal.doStty()           |
 | xterm: get screen size   | backend.TTYSessionInfo.sttyWindowSize()        |
 | xterm: screen output     | backend.ECMA48Terminal.flushString()           |
 | terminal: xterm widget   | tterminal.ECMA48                               |
-| terminal: sixel input    | tterminal.Sixel                                |
+| terminal: sixel input    | tterminal.SixelDecoder                         |
 | screen: output functions | backend.LogicalScreen                          |
 | screen: CJK output       | backend.GlyphMaker, backend.LogicalScreen.putFullwidthChar() |
 | screen: mouse cursor     | TApplication.invertCell()                      |
@@ -159,8 +159,8 @@ always appear where and how it should be, but the image might leave
 artifacts in the region it was originally drawn in.)  Jexer developed
 a strategy that should work on any terminal with sixel/image support:
 
-* For text across the entire screen, only the cells that have changed
-  are updated. This is similar to ncurses.
+ * For text across the entire screen, only the cells that have changed
+   are updated. This is similar to ncurses.
 
  * For rows that have image or text changes, and contain image data,
    all images on that row are redrawn.  Text updates can thus distort
@@ -168,7 +168,7 @@ a strategy that should work on any terminal with sixel/image support:
    anyway.
 
  * The mouse cursor can move multiple rows in a single screen update,
-   and Jexer does not always know which rows containing image data
+   and Jexer does not always know which rows that contain image data
    might have changed between the last time the mouse was displayed,
    and its current position.  So it conservatively updates all rows
    between the old and new mouse pointer rows, inclusive.
@@ -177,6 +177,8 @@ a strategy that should work on any terminal with sixel/image support:
    the text. For performance, adjacent image cells are collected into
    contiguous blocks, and these contiguous blocks are cached.
 
-With the above stragegy, a sixel-supporting terminal is not required
+With the above stragegy, an image-supporting terminal is not required
 to ensure any images in its display are maintained or coherent in some
 manner after text has overwritten a portion of it.
+
+😻
