@@ -285,13 +285,18 @@ available: legacy and hq.
 The legacy encoder is a uniform color quantizer with
 nearly-equal-sized segments in HSL colorspace.  All images are mapped
 to a single palette.  Bandwidth can be saved if the terminal supports
-DECRST 1070 -- see jexer.ECMA48.sixelSharedPalette.
+DECRST 1070 -- see jexer.ECMA48.sixelSharedPalette.  This encoder is
+the original, it looks more retro, but might also work better for some
+terminals.
 
-The hq encoder generates custom palettes via several methods.  It much
-much faster and has higher picture quality, but requires the terminal
-support individual registers per image.
+The hq encoder generates custom palettes via several methods, with the
+most advanced being a median cut.  It is much faster, has higher
+picture quality, but requires the terminal support individual
+registers per image (DECSET 1070).  It looks a bit like VHS tape
+quality, with minor grain artifacts, and depending on the picture and
+palette size might show horizontal banding.
 
-Default: legacy.
+Default: hq.
 
 jexer.ECMA48.sixelPaletteSize
 -----------------------------
