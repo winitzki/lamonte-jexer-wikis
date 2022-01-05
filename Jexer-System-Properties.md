@@ -48,8 +48,9 @@ default values, below which is a more detailed outline.
 | jexer.ECMA48.rgbColor     | false   | ECMA48: emit 24-bit RGB for system colors |
 | jexer.ECMA48.wideCharImages | true  | ECMA48: draw CJK/emoji as images       |
 | jexer.ECMA48.sixel        | true    | ECMA48: draw images using sixel        |
-| jexer.ECMA48.sixelPaletteSize | 1024 | ECMA48: number of colors for sixel images |
-| jexer.ECMA48.sixelSharedPalette | true | ECMA48: shared palette for sixel images |
+| jexer.ECMA48.sixelEncoder | hq      | ECMA48: sixel encoder to use           |
+| jexer.ECMA48.sixelPaletteSize | 1024 (legacy), 256 (hq) | ECMA48: number of colors for sixel images |
+| jexer.ECMA48.sixelSharedPalette | true | ECMA48: shared palette for sixel images (legacy only) |
 | jexer.ECMA48.iTerm2Images | false   | ECMA48: draw images using iTerm2 protocol |
 | jexer.ECMA48.jexerImages  | png     | ECMA48: draw images using Jexer protocol |
 | jexer.ECMA48.imagesOverText | false | ECMA48: transparent image pixels       |
@@ -275,22 +276,44 @@ expensive in bandwidth, very expensive in CPU (especially for large
 images), and will leave artifacts on the screen if the terminal does
 not support sixel.  Default: true.
 
+jexer.ECMA48.sixelEncoder
+-------------------------
+
+Used by jexer.backend.ECMA48Terminal.  Two sixel encoders are
+available: legacy and hq.
+
+The legacy encoder is a uniform color quantizer with
+nearly-equal-sized segments in HSL colorspace.  All images are mapped
+to a single palette.  Bandwidth can be saved if the terminal supports
+DECRST 1070 -- see jexer.ECMA48.sixelSharedPalette.
+
+The hq encoder generates custom palettes via several methods.  It much
+much faster and has higher picture quality, but requires the terminal
+support individual registers per image.
+
+Default: legacy.
+
 jexer.ECMA48.sixelPaletteSize
 -----------------------------
 
 Used by jexer.backend.ECMA48Terminal.  Number of colors to use for
-sixel output.  Values are: 2 (black-and-white), 256, 512, 1024, or
-2048.  Default: 1024.
+sixel output.
 
-jexer.ECMA48.sixelSharedPalette
--------------------------------
+For the legacy encoder, values are: 2 (black-and-white), 256, 512,
+1024, or 2048; default is 1024.
 
-Used by jexer.backend.ECMA48Terminal.  If true, use a single shared
-palette for sixel images, emitting the palette once on the first
-image; this feature requires terminal support for DECRST 1070 (the
-ability to disable "use private color registers for each graphic"
-flag).  If false, emit a palette with the used colors on every sixel
-image.  Default: true.
+For the hq encoder, values are: 2 (black-and-white), 4, 8, 16, 32, 64,
+128, 256, 512, 1024, or 2048; default is 256.
+
+jexer.ECMA48.sixelSharedPalette (legacy encoder only)
+-----------------------------------------------------
+
+Used by jexer.backend.ECMA48Terminal, only for the legacy sixel
+encoder.  If true, use a single shared palette for sixel images,
+emitting the palette once on the first image; this feature requires
+terminal support for DECRST 1070 (the ability to disable "use private
+color registers for each graphic" flag).  If false, emit a palette
+with the used colors on every sixel image.  Default: true.
 
 jexer.ECMA48.iTerm2Images
 -------------------------
