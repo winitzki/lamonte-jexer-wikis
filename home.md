@@ -58,6 +58,7 @@ Examples
 * The [official demo.](demo-application)
 * Prototype [tiling window manager.](example-tiling-wm)
 * Prototype [file viewer.](example-image-viewer)
+* Prototype [Xterm video player.](example-xterm-video-player)
 
 
 
