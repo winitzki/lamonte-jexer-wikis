@@ -223,4 +223,14 @@ _this_ frame are also _fully_ included in said damage map.  With the
 strips, it is easier to reason about what will actually need to be
 redrawn.
 
+A very nice side effect of the horizontal strips output is that
+different sixel palettes can be generated for each row.  For sixel
+encoders that generate their own per-image palettes (including
+jexer.backend.HQSixelEncoder), it results in an apparent bit depth
+much higher that the per-image bit depth.  The screen below is using
+256-color palettes for each strip, yet it almost looks like 16-bit
+depth:
+
+![jexer.backend.HQSixelEncoder](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/snake_xterm_hq.png)
+
 😻

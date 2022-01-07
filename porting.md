@@ -33,7 +33,7 @@ Location Of Key Features
 | xterm: mouse input       | backend.ECMA48Terminal.parseMouse()            |
 | xterm: mouse input (SGR) | backend.ECMA48Terminal.parseMouseSGR()         |
 | xterm: keyboard input    | backend.ECMA48Terminal.processChar()           |
-| xterm: sixel output      | backend.SixelEncoder                           |
+| xterm: sixel output      | backend.HQSixelEncoder, backend.LegacySixelEncoder |
 | xterm: set raw/cooked termios | backend.ECMA48Terminal.doStty()           |
 | xterm: get screen size   | backend.TTYSessionInfo.sttyWindowSize()        |
 | xterm: screen output     | backend.ECMA48Terminal.flushString()           |
@@ -59,15 +59,16 @@ Porting Sequence
 ----------------
 
 1. Basic Hello World.  Port CellAttributes, Cell, Color, Screen,
-   LogicalScreen, ECMA48Terminal, TTYSessionInfo, TKeypress,
-   TKeypressEvent, and TMouseEvent.  This gets you a screen to draw
-   on, mouse and keyboard input, and raw termios.  If you don't want a
-   full windowing system, you can stop here.
+   LogicalScreen, ECMA48Terminal, either LegacySixelEncoder or
+   HQSixelEncoder, TTYSessionInfo, TKeypress, TKeypressEvent, and
+   TMouseEvent.  This gets you a screen to draw on (with image output
+   support), mouse and keyboard input, and raw termios.  If you don't
+   want a full windowing system, you can stop here.
 
 2. If you want pixel-based logic rather than (or in addition to) text
-   cell-based, port the tackboard package classes.  These are entirely
-   unaware of the windowing system, and can place bitmaps anywhere on
-   screen.
+   cell-based logic, port the tackboard package classes.  These are
+   entirely unaware of the windowing system, and can place bitmaps
+   anywhere on screen.
 
 3. Basic windowing system.  Port TWidget, TWindow, Backend,
    GenericBackend, ECMA48Backend, and TApplication.  In TApplication,
@@ -180,5 +181,9 @@ a strategy that should work on any terminal with sixel/image support:
 With the above stragegy, an image-supporting terminal is not required
 to ensure any images in its display are maintained or coherent in some
 manner after text has overwritten a portion of it.
+
+See also the "Text Cells" section in [Jexer's high-level design
+document,](high-level-design) which discusses the internal flow of
+image data from source to the user-facing screen.
 
 😻
