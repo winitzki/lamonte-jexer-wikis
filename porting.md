@@ -185,4 +185,6 @@ See also the "Text Cells" section in [Jexer's high-level design
 document,](high-level-design) which discusses the internal flow of
 image data from source to the user-facing screen.
 
+![jexer.backend.HQSixelEncoder](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/snake_xterm_hq.png)
+
 😻
