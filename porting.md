@@ -73,7 +73,7 @@ Porting Sequence
 3. Basic windowing system.  Port TWidget, TWindow, Backend,
    GenericBackend, ECMA48Backend, and TApplication.  In TApplication,
    strip out the menu management and secondary widget handler code.
-   In TWidget, comment out the convenvience widget constructors
+   In TWidget, comment out the convenience widget constructors
    (addLabel, addField, etc.) for now.
 
 4. Add some widgets.  Port TLabel, TButton, and TField.  Build a demo
@@ -111,9 +111,8 @@ to C functions.  The workarounds Jexer uses are summarized here:
 * "stty size" is used in place of ioctl(TIOCGWINSZ), to determine the
   number of rows and columns of the screen when running against
   stdin/stdout (System.in/System.out).  Another option a language
-  could consider is the "CSI [ 18 t" sequence: most xterm-like
-  terminals will respond with a sequence containing the window rows
-  and columns.
+  could consider is the "CSI 18 t" sequence: most xterm-like terminals
+  will respond with a sequence containing the window rows and columns.
 
 * "stty -ignbrk -brkint -parmrk -istrip -inlcr -igncr -icrnl -ixon
   -opost -echo -echonl -icanon -isig -iexten -parenb cs8 min 1 <
@@ -178,7 +177,7 @@ a strategy that should work on any terminal with sixel/image support:
    the text. For performance, adjacent image cells are collected into
    contiguous blocks, and these contiguous blocks are cached.
 
-With the above stragegy, an image-supporting terminal is not required
+With the above strategy, an image-supporting terminal is not required
 to ensure any images in its display are maintained or coherent in some
 manner after text has overwritten a portion of it.
 
