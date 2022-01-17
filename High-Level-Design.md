@@ -171,14 +171,14 @@ The text cell model is this:
 
 * Currently there are three paths for a partially-transparent image to
   cover another image, in the "tackboard" which can place arbitrary
-  bitmaps anywhere; and in the terminal widget.  At these points it
-  blindly blits one image over the other - which conveniently handles
-  alpha blending too.  All other paths to generate image data will
-  either set a Cell to text, or an image, but not an image-over-image.
-  This is just an artifact of how Jexer got here though and not a
-  specific design choice.  If Jexer gets another widget/object that
-  can put image-over-image, then it will need to handle
-  image-over-image at that spot too.
+  bitmaps anywhere; in the terminal widget; and when blending
+  translucent windows on the screen.  At these points it blits one
+  image over the other, and handles alpha blending too.  All other
+  paths to generate image data will either set a Cell to text, or an
+  image, but not an image-over-image.  This is just an artifact of how
+  Jexer got here though and not a specific design choice.  If Jexer
+  gets another widget/object that can put image-over-image, then it
+  will need to handle image-over-image at that spot too.
 
 * Once the logical screen is fully assembled, the image goes to the
   output heads which can be a mix of GUI/Swing or Xterm screens.
