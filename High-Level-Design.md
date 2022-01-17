@@ -149,9 +149,9 @@ The text cell model is this:
 * A Cell can have text AND image data.  The text is a single
   codepoint, which is a gross oversimplification preventing the use of
   color emojis 🙁 .  The image is a "cell-sized" RGBA bitmap.  When an
-  image is set on a Cell, the hash code for that image is computed,
-  and the flag indicating whether it has transparent pixels is reset
-  to "unknown".
+  image is set on a Cell, the hash code for that image is removed, and
+  the flag indicating whether it has transparent pixels is reset to
+  "unknown".
 
 * The internal cell size in pixels for single-head applications is the
   same as that provided by the terminal.  For multi-head applications,
@@ -169,16 +169,16 @@ The text cell model is this:
   subsequent frames each widget will "know" which Cells are
   transparent.
 
-* Currently there are only two paths for a partially-transparent image
-  to cover another image, in the "tackboard" which can place arbitrary
+* Currently there are three paths for a partially-transparent image to
+  cover another image, in the "tackboard" which can place arbitrary
   bitmaps anywhere; and in the terminal widget.  At these points it
   blindly blits one image over the other - which conveniently handles
   alpha blending too.  All other paths to generate image data will
   either set a Cell to text, or an image, but not an image-over-image.
-  This is just an artifact of how Jexer got here though and not a specific
-  design choice.  If Jexer gets another widget/object that can put
-  image-over-image, then it will need to handle image-over-image at
-  that spot too.
+  This is just an artifact of how Jexer got here though and not a
+  specific design choice.  If Jexer gets another widget/object that
+  can put image-over-image, then it will need to handle
+  image-over-image at that spot too.
 
 * Once the logical screen is fully assembled, the image goes to the
   output heads which can be a mix of GUI/Swing or Xterm screens.
@@ -193,16 +193,16 @@ The text cell model is this:
   also do Synchronized Output when it detects support for that.
 
 * For Cells containing images, consecutive horizontal Cells with
-  images are concatenated into one image.  For multihead, that image
-  is then rescaled to match the cell aspect ratio of the final
-  terminal.
+  images are concatenated into one image.  At this time the hash code
+  for the image cells is computed and checked against the LRU cache.
+  If the image is in cache, then that result is pulled out, wrapped in
+  the cursor position and DCS/ST, and sent out.
 
-* The (maybe-rescaled) image is then converted to sixel/Jexer/iTerm2,
-  and the final string (minus cursor position and DCS/ST start/end) in
-  put into a LRU cache.  If the same string of Cells comes in, the
-  cached string is output instead with its own cursor postion and
-  DCS/ST.  (Checking Cell equality is also fast because the Cell has
-  cached the image hash code.)
+* Otherwise, for multihead system the image is then rescaled to match
+  the cell aspect ratio of the final terminal.  The (maybe-rescaled)
+  image is then converted to sixel/Jexer/iTerm2, and the final string
+  (minus cursor position and DCS/ST start/end) in put into a LRU
+  cache.
 
 * The result is that no image is ever taller than a single text cell,
   but can extend across the entire screen (or 1000 max pixels due to

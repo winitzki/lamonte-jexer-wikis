@@ -73,7 +73,21 @@ default values, below which is a more detailed outline.
 | jexer.cjkFont.filename    | NotoSansMonoCJKtc-Regular.otf | Font for CJK characters |
 | jexer.emojiFont.filename  | OpenSansEmoji.ttf | Font for emojis              |
 | jexer.fallbackFont.filename |       | Font to use when no other available font has a codepoint |
-
+| jexer.TWindow.borderStyleForeground | double | Window border style           |
+| jexer.TWindow.borderStyleModal      | double | Window border style           |
+| jexer.TWindow.borderStyleMoving     | single | Window border style           |
+| jexer.TWindow.borderStyleInactive   | single | Window border style           |
+| jexer.TMenu.borderStyle             | single | Menu border style             |
+| jexer.TEditColorTheme.borderStyle   | double | Color theme window border style     |
+| jexer.TEditColorTheme.options.borderStyle   | single | Interior boxes border style |
+| jexer.TRadioGroup.borderStyle       | singleVdoubleH | Radio group border style    |
+| jexer.TScreenOptions.borderStyle    | single | Screen options window border style  |
+| jexer.TScreenOptions.grid.borderStyle    | single | Border style around the grid   |
+| jexer.TScreenOptions.options.borderStyle | single | Interior boxes border style    |
+| jexer.translucence        | true    | Translucent windows                    |
+| jexer.TWindow.opacity     | 75      | Default window opacity (10 - 100)      |
+| jexer.TTerminal.opacity   | 85      | Terminal window opacity (10 - 100)     |
+| jexer.TMenu.opacity       | 85      | Menu window opacity (10 - 100)         |
 
 
 jexer.textMouse

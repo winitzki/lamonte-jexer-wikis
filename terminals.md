@@ -49,7 +49,7 @@ the terminals last tested against Jexer:
 | xfce4-terminal | X11                | yes         | yes          | no     |
 | Windows Terminal(6) | Windows       | yes         | yes          | no     |
 | DomTerm(3)     | Web                | yes         | no           | yes    |
-| aminal(3)      | X11                | yes         | no           | no     |
+| darktile       | X11                | yes         | no           | no(5)  |
 | konsole        | X11                | yes         | no           | no     |
 | yakuake        | X11                | yes         | no           | no     |
 | screen         | CLI                | yes(1)      | yes(1)       | no(2)  |
