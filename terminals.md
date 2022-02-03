@@ -34,13 +34,13 @@ the terminals last tested against Jexer:
 | Terminal       | Environment        | Mouse Click | Mouse Cursor | Images |
 | -------------- | ------------------ | ----------- | ------------ | ------ |
 | xterm          | X11                | yes         | yes          | yes    |
+| wezterm        | X11, Windows       | yes         | yes          | yes(7) |
+| foot(3)        | Wayland            | yes         | yes          | yes    |
+| contour(3)     | X11                | yes         | yes          | yes    |
 | mintty         | Windows            | yes         | yes          | yes    |
 | mlterm         | X11                | yes         | yes          | yes    |
 | RLogin         | Windows            | yes         | yes          | yes    |
 | alacritty(3b)  | X11                | yes         | yes          | yes    |
-| contour(3)     | X11                | yes         | yes          | yes    |
-| foot(3)        | Wayland            | yes         | yes          | yes    |
-| wezterm        | X11, Windows       | yes         | yes          | yes(7) |
 | gnome-terminal | X11                | yes         | yes          | no     |
 | iTerm2         | Mac                | yes         | yes          | no(5)  |
 | kitty(3)       | X11                | yes         | yes          | no(2)  |
@@ -93,10 +93,12 @@ The table below lists embeddable widgets tested against Jexer recently:
 | Terminal       | Language | Mouse Click | Mouse Cursor | Images | Link |
 | -------------- | -------- | ----------- | ------------ | ------ | ---- |
 | jexer (ECMA48) | Java     | yes         | yes          | yes    | https://gitlab.com/klamonte/jexer
-| upp-components Terminal | C++ | yes     | yes          | yes    | https://github.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
-| gowid | Go | yes | yes | no(1) | https://github.com/gcla/gowid
-| xterm.js     | TypeScript | yes         | yes          | no     | https://xtermjs.org
-| urwid | Python | no | no | no | https://github.com/urwid/urwid
-| JediTerm | Java | yes | no | no | https://github.com/JetBrains/jediterm
+| upp-components Terminal | C++  | yes    | yes          | yes    | https://github.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
+| gowid          | Go       | yes         | yes          | no(1)  | https://github.com/gcla/gowid
+| xterm.js(2)    | TypeScript | yes       | yes          | yes    | https://xtermjs.org
+| urwid          | Python   | no          | no           | no     | https://github.com/urwid/urwid
+| JediTerm       | Java     | yes         | no           | no     | https://github.com/JetBrains/jediterm
 
 1 - Also fails to filter out sixel data, leaving garbage on screen.
+
+2 - Using jerch's xterm-addon-image: https://github.com/jerch/xterm-addon-image
