@@ -1,11 +1,11 @@
-Jexer 1.5.0 Release
+Jexer 1.6.0 Release
 ===================
 
-I am genuinely surprised to announce the release of [Jexer
-1.5.0](https://gitlab.com/klamonte/jexer).  (Surprised because I have
+I remain surprised to announce the release of [Jexer
+1.6.0](https://gitlab.com/klamonte/jexer).  (Surprised because I have
 been unable to code on anything serious for about 18 months, and
-suddenly I could again.  Who knew?)  This version is "beta": it has
-a bit of new code and not a lot of testing.  Caveat emptor.
+suddenly I could again.  Who knew?)  This version is "alpha": it has
+quite a bit of new code and not a lot of testing.  Caveat emptor.
 
 Jexer is an advanced text-plus-graphical windowing system framework
 that can help new applications take full advantage of the terminal.
@@ -32,8 +32,13 @@ features are:
     window](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/snake_swing.png?raw=true).
     Jexer is the first system capable of managing multiple terminal
     windows displaying properly overlapping images.  Jexer currently
-    supports up to 1024-color sixel images, and full-color PNG and JPG
-    images using iTerm2 and Jexer image protocols.
+    supports up to 1024-color sixel images (which it cleverly uses to
+    [look like a much higher bit
+    depth](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/pca_match.png?raw=true)),
+    and full-color PNG and JPG images using iTerm2 and Jexer image
+    protocols.
+
+  * Translucent windows, including images.
 
   * Text-based and
     [pixel-based](https://jexer.sourceforge.io/screenshots/pixel_demo.gif)
@@ -87,7 +92,7 @@ On Maven:
 
     group: com.gitlab.klamonte
     artifact: jexer
-    version: 1.5.0
+    version: 1.6.0
 
 
 Ugh, Java Sucks!
