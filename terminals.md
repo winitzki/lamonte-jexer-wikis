@@ -94,8 +94,8 @@ The table below lists embeddable widgets tested against Jexer recently:
 | -------------- | -------- | ----------- | ------------ | ------ | ---- |
 | jexer (ECMA48) | Java     | yes         | yes          | yes    | https://gitlab.com/klamonte/jexer
 | upp-components Terminal | C++  | yes    | yes          | yes    | https://github.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
-| gowid          | Go       | yes         | yes          | no(1)  | https://github.com/gcla/gowid
 | xterm.js(2)    | TypeScript | yes       | yes          | yes    | https://xtermjs.org
+| gowid          | Go       | yes         | yes          | no(1)  | https://github.com/gcla/gowid
 | urwid          | Python   | no          | no           | no     | https://github.com/urwid/urwid
 | JediTerm       | Java     | yes         | no           | no     | https://github.com/JetBrains/jediterm
 
