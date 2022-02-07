@@ -30,6 +30,11 @@ Binary release downloads are also available on
 [SourceForge.](https://sourceforge.net/projects/jexer/files/jexer/)
 
 
+Why I Do Not Post My Projects Anymore
+-------------------------------------
+
+[Why I Do Not Post My Projects Anymore](no-release-announcements)
+
 
 Documentation
 -------------
