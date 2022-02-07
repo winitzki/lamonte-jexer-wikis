@@ -32,10 +32,10 @@ conversation started about some other (massive and/or funded)
 products.  Then they worked to gas up the people complaining because
 their terminals aren't compatible.
 
-Let me be blunt: there exist only two project _in the world_ right now
-that can do this:
+Let me be blunt: there exist only two projects _in the world_ right
+now that can do this:
 
-![WezTerm, translucent images](/screenshots/wezterm_translucent_images.png?raw=true "WezTerm, translucent images")
+![WezTerm, translucent images](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/wezterm_translucent_images.png?raw=true "WezTerm, translucent images")
 
 Jexer and [notcurses](https://github.com/dankamongmen/notcurses) are
 on the bleeding edge.  Your terminals will get there eventually when
@@ -150,7 +150,8 @@ support:
     wake up".  That's obvious for things like input events, but less
     obvious that it works fine for even whole screens: my terminal
     widget reader thread composes its entire screen, and then passes
-    that over to the queue that screen display thread will pull from.
+    that over to the queue that the screen display thread will pull
+    from.
 
   - It's probably not fully solved though.  I occasionaly have
     deadlocks to work out between "putting things into the queue" and
