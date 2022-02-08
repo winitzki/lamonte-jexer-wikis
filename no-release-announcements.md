@@ -77,11 +77,10 @@ I don't care if you work in IT developing commercial products.  You
 make dashboards to manage a zillion Docker instances?  Cool, you do
 you.  I'm over here, you're over there, maybe we cross paths, maybe
 not.  May you all have wonderful weekends doing whatever you love.
-Life is good.
 
-I absolutely _loathe_ people who use hobby art projects to initiate
-conversations about commercial or portfolio stuff.  Those folks can
-seriously rot in hell.
+I absolutely _loathe_ people who use other people's hobby art projects
+to initiate conversations about their own commercial stuff.  Those
+folks can seriously rot in hell.
 
 
 When People Talk About Their Stuff
