@@ -61,13 +61,19 @@ this page prominently on the Jexer README and Wiki.
 What I Care About
 -----------------
 
+Someone much wiser than me said recently: _These are small things._
+
+Jexer is a small thing.  _All_ of these projects are small things.  If
+people aren't having fun, they should be looking for something else to
+enjoy.
+
 I don't care if someone I've never met uses Jexer, likes Jexer, or
 neither.  I write my code to see what's possible, to prove right or
 wrong the assumptions about where we can go, and maybe find a bit of
 art along the way.  Sometimes amazing things come out.  _(For Jexer
 1.6, I followed chafa's outline on using principal component analysis
 to match colors, and I can't tell you just how beautiful that was. One
-of _the_ best moments of my last nine years of code.  And far _far_
+of *the* best moments of my last nine years of code.  And far *far*
 away from a few Unicode dashboards on a "modern" dark background.)_ I
 _really_ love it when I see people create art of their own.  Those
 people know who they are.  I hope by now that they know who I am, and
