@@ -209,7 +209,7 @@ support:
 
   2. The likelihood that I have crashed your terminal is inversely
      proportional to how popular you think it is.  The "quiet" ones
-     out there are usually a lot more solid that the "loud" ones.
+     out there are usually a lot more solid than the "loud" ones.
      (And a special shout out to RLogin and yaft: you are the _only_
      two terminals that I have not seen crash, fill the screen with
      garbage, or be rendered unusable by Jexer's output.  Of course, I
