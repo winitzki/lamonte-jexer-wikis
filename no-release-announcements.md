@@ -100,8 +100,8 @@ would have been happy if people pointed to
 brilliant developer behind [vtm](https://github.com/netxs-group/vtm)
 to stop what he was doing?  I _love_ vtm and where it's going!  I
 would have been _heartbroken_ to hear that he saw someone else's stuff
-and gave up.  I have to imagine that most authors feel the same way.
-There is room for _all_ of us to try to have fun.
+and stopped enjoying it.  I have to imagine that most authors feel the
+same way.  There is room for _all_ of us to try to have fun.
 
 Don't tell people "there is no imaginable use".  There _was_ use for
 me: when I was programming oceanographic buoys over RS-232 from the
