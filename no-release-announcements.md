@@ -94,16 +94,16 @@ would have been happy if people pointed to
 [xtermwm](https://gitlab.com/klamonte/xtermwm) in 2020 to tell the
 brilliant developer behind [vtm](https://github.com/netxs-group/vtm)
 to stop what he was doing?  I _love_ vtm and where it's going!  I
-would have been _heartbroken_ to hear that he saw my stuff and gave
-up.  I have to imagine that most authors feel the same way.  There is
-room for _all_ of us to try to have fun.
+would have been _heartbroken_ to hear that he saw someone else's stuff
+and gave up.  I have to imagine that most authors feel the same way.
+There is room for _all_ of us to try to have fun.
 
-Don't tell people "there is no use".  There _was_ use for me: when I
-was programming oceanographic buoys over RS-232 on the raw Linux
-console, I needed more features in the console, so I wrote them into
-one of the few ncurses-based terminals out there.  (Another is
-SyncTERM, and it is a really cool BBS client.)  There was no use for
-GPUs outside of gaming, and now they are a core part of the global
+Don't tell people "there is no imaginable use".  There _was_ use for
+me: when I was programming oceanographic buoys over RS-232 from the
+raw Linux console, I needed more features in the console, so I wrote
+them into one of the few ncurses-based terminals out there.  (Another
+is SyncTERM, and it is a really cool BBS client.)  There was no use
+for GPUs outside of gaming, and now they are a core part of the global
 compute infrastucture.  There is currently little use for [DOOM inside
 Xterm,](https://gitlab.com/klamonte/xtermdoom) but it is fun, and can
 help terminal authors find some performance bugs.
