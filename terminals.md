@@ -43,7 +43,7 @@ the terminals last tested against Jexer:
 | alacritty(3b)  | X11                | yes         | yes          | yes    |
 | gnome-terminal | X11                | yes         | yes          | no     |
 | iTerm2         | Mac                | yes         | yes          | no(5)  |
-| kitty(3)       | X11                | yes         | yes          | no(2)  |
+| kitty(3)       | X11                | yes         | yes          | no(8)  |
 | lcxterm        | CLI, Linux console | yes         | yes          | no     |
 | rxvt-unicode   | X11                | yes         | yes          | no(2)  |
 | xfce4-terminal | X11                | yes         | yes          | no     |
@@ -77,6 +77,11 @@ the terminals last tested against Jexer:
     WSL-1 Debian instance.
 
 7 - Both sixel and iTerm2 images.
+
+8 - Kitty image protocol support will never be in Jexer, as a matter
+    of principle.  Should that terminal adopt iTerm2 or sixel, then
+    images could work.  (Image support for kitty was removed on
+    February 10, 2022.)
 
 When running on the raw Linux console,
 [LCXterm](https://gitlab.com/klamonte/lcxterm) or
