@@ -130,7 +130,7 @@ to C functions.  The workarounds Jexer uses are summarized here:
   the shells inside terminal windows cannot detect the change when a
   user resizes a TTerminalWidget / TTerminalWindow.  Typically one
   would call ioctl(TIOCSWINSZ) for this purpose; Jexer instead uses
-  the [ptypipe](https://gitlab.com/klamonte/ptypipe) utility for this
+  the [ptypipe](https://gitlab.com/AutumnMeowMeow/ptypipe) utility for this
   case.  ptypipe spawns its arguments in a pty via forkpty(), and then
   listens for "CSI 8 ; {rows} ; {cols} t" in its stdin, and if found
   strips that out and calls ioctl(TIOCSWINSZ) instead.
@@ -185,6 +185,6 @@ See also the "Text Cells" section in [Jexer's high-level design
 document,](high-level-design) which discusses the internal flow of
 image data from source to the user-facing screen.
 
-![jexer.backend.HQSixelEncoder](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/snake_xterm_hq.png)
+![jexer.backend.HQSixelEncoder](https://gitlab.com/AutumnMeowMeow/jexer/-/raw/master/screenshots/pca_match.png)
 
 😻

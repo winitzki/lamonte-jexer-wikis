@@ -53,4 +53,4 @@ Below one can see a window with an underlay (the heart floating under
 the text), an overlay (the other heart over it), and a custom mouse
 bitmap placed on the application overlay:
 
-![](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/xterm_pixel_mouse.gif?raw=true)
+![](https://gitlab.com/AutumnMeowMeow/jexer/-/raw/master/screenshots/xterm_pixel_mouse.gif?raw=true)

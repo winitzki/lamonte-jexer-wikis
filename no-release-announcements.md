@@ -35,14 +35,14 @@ their terminals aren't compatible.
 Let me be blunt: there exist only two projects _in the world_ right
 now that can do this:
 
-![WezTerm, translucent images](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/wezterm_translucent_images.png?raw=true "WezTerm, translucent images")
+![WezTerm, translucent images](https://gitlab.com/AutumnMeowMeow/jexer/-/raw/master/screenshots/wezterm_translucent_images.png?raw=true "WezTerm, translucent images")
 
 Jexer and [notcurses](https://github.com/dankamongmen/notcurses) are
 on the bleeding edge.  Your terminals will get there eventually when
 it becomes a priority for them.  Don't blame me, or the language, or
 whatever else because your terminal didn't work and you didn't spend
 five damn minutes [finding one that
-does.](https://gitlab.com/klamonte/jexer/wikis/terminals)
+does.](https://gitlab.com/AutumnMeowMeow/jexer/wikis/terminals)
 
 In the past I would hang out and try to help the few people with
 questions.  One time that kind of exchange turned into a whole
@@ -96,12 +96,13 @@ Don't tell people "that's been done, you wasted your time."  Do you
 think the people who came first would be happy to know that you are
 using their project to shut down someone else's fun?  Do you think I
 would have been happy if people pointed to
-[xtermwm](https://gitlab.com/klamonte/xtermwm) in 2020 to tell the
-brilliant developer behind [vtm](https://github.com/netxs-group/vtm)
-to stop what he was doing?  I _love_ vtm and where it's going!  I
-would have been _heartbroken_ to hear that he saw someone else's stuff
-and stopped enjoying it.  I have to imagine that most authors feel the
-same way.  There is room for _all_ of us to try to have fun.
+[xtermwm](https://gitlab.com/AutumnMeowMeow/xtermwm) in 2020 to tell
+the brilliant developer behind
+[vtm](https://github.com/netxs-group/vtm) to stop what he was doing?
+I _love_ vtm and where it's going!  I would have been _heartbroken_ to
+hear that he saw someone else's stuff and stopped enjoying it.  I have
+to imagine that most authors feel the same way.  There is room for
+_all_ of us to try to have fun.
 
 Don't tell people "there is no imaginable use".  There _was_ use for
 me: when I was programming oceanographic buoys over RS-232 from the
@@ -110,8 +111,8 @@ them into one of the few ncurses-based terminals out there.  (Another
 is SyncTERM, and it is a really cool BBS client.)  There was no use
 for GPUs outside of gaming, and now they are a core part of the global
 compute infrastucture.  There is currently little use for [DOOM inside
-Xterm,](https://gitlab.com/klamonte/xtermdoom) but it is fun, and can
-help terminal authors find some performance bugs.
+Xterm,](https://gitlab.com/AutumnMeowMeow/xtermdoom) but it is fun,
+and can help terminal authors find some performance bugs.
 
 OK rant over.
 
@@ -240,7 +241,7 @@ support:
   loss.  We should all want the "alumni" so to say to feel like their
   time in this space gave them more positive than negative.  Maybe
   they [will come
-  back.](https://gitlab.com/klamonte/jexer/-/issues/75#note_818607025)
+  back.](https://gitlab.com/AutumnMeowMeow/jexer/-/issues/75#note_818607025)
   Maybe not.  I hope in the broad sense that other authors are
   celebrated for their wins, rather than torn down for ... whatever.
 

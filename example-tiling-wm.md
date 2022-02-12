@@ -3,9 +3,9 @@ JexerTilingWindowManager
 
 Two short examples of using Jexer's built-in components to become a
 bare-bones command-line tiling window manager are
-[here](https://gitlab.com/klamonte/jexer/blob/master/examples/JexerTilingWindowManager.java)
+[here](https://gitlab.com/AutumnMeowMeow/jexer/blob/master/examples/JexerTilingWindowManager.java)
 and
-[here.](https://gitlab.com/klamonte/jexer/blob/master/examples/JexerTilingWindowManager2.java)
+[here.](https://gitlab.com/AutumnMeowMeow/jexer/blob/master/examples/JexerTilingWindowManager2.java)
 
 The first example spawns terminal windows arranged similar to
 horizontal/vertical splits in a multiplexer:

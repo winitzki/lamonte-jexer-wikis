@@ -20,7 +20,8 @@ are outlined here.
   of the box.  But with just a little time one could turn the [tiling
   window manager example](example-tiling-wm) into a true powerhouse.
   Check out [Xterm Window
-  Manager](https://gitlab.com/klamonte/xtermwm), it does just that.
+  Manager](https://gitlab.com/AutumnMeowMeow/xtermwm), it does just
+  that.
 
 * File Manager - The [file viewer example](example-image-viewer) could
   be a starting point for a 'ranger' like file manager, but with sixel

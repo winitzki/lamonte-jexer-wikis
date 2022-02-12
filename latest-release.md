@@ -2,8 +2,8 @@ Jexer 1.6.0 Release
 ===================
 
 I remain surprised to announce the release of [Jexer
-1.6.0](https://gitlab.com/klamonte/jexer).  (Surprised because I have
-been unable to code on anything serious for about 18 months, and
+1.6.0](https://gitlab.com/AutumnMeowMeow/jexer).  (Surprised because I
+have been unable to code on anything serious for about 18 months, and
 suddenly I could again.  Who knew?)  This version is "alpha": it has
 quite a bit of new code and not a lot of testing.  Caveat emptor.
 
@@ -15,7 +15,7 @@ features are:
   * MIT licensed.  100% Java.
 
   * Direct support for xterm-like
-    [terminals](https://gitlab.com/klamonte/jexer/-/wikis/terminals):
+    [terminals](https://gitlab.com/AutumnMeowMeow/jexer/-/wikis/terminals):
     mouse, keyboard, 24-bit RGB color, UTF-8, fullwidth characters
     (CJK and emoji), and [sixel
     images.](https://vt100.net/docs/vt3xx-gp/chapter14.html)
@@ -27,14 +27,14 @@ features are:
   * Image support, including both as [input in its terminal
     window](https://jexer.sourceforge.io/screenshots/overlapping_alpha.png),
     and as output to [the host
-    terminal](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/sixel_images.png?raw=true)
+    terminal](https://gitlab.com/AutumnMeowMeow/jexer/-/raw/master/screenshots/sixel_images.png?raw=true)
     or [Swing
-    window](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/snake_swing.png?raw=true).
+    window](https://gitlab.com/AutumnMeowMeow/jexer/-/raw/master/screenshots/snake_swing.png?raw=true).
     Jexer is the first system capable of managing multiple terminal
     windows displaying properly overlapping images.  Jexer currently
     supports up to 1024-color sixel images (which it cleverly uses to
     [look like a much higher bit
-    depth](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/pca_match.png?raw=true)),
+    depth](https://gitlab.com/AutumnMeowMeow/jexer/-/raw/master/screenshots/pca_match.png?raw=true)),
     and full-color PNG and JPG images using iTerm2 and Jexer image
     protocols.
 
@@ -78,13 +78,13 @@ Find out more at the Jexer Sourceforge or GitLab project pages:
 
   * https://jexer.sourceforge.io/
 
-  * https://gitlab.com/klamonte/jexer
+  * https://gitlab.com/AutumnMeowMeow/jexer
 
 
 Download
 --------
 
-GitLab: git clone https://gitlab.com/klamonte/jexer.git
+GitLab: git clone https://gitlab.com/AutumnMeowMeow/jexer.git
 
 Binary downloads: http://sourceforge.net/project/showfiles.php?group_id=2829121
 
@@ -118,12 +118,12 @@ windows, add 'ptypipe'.)
 
 So for those who want something like Jexer but in your own favorite
 language, I encourage you to check out the [Porting
-Jexer](https://gitlab.com/klamonte/jexer/wikis/porting) page on the
-wiki: it has pointers to where the key features are, and a potential
-roadmap if you wanted to take part or all of it into your own hands.
-I licensed Jexer as MIT, stuck with simple Java 1.6, and thoroughly
-documented it in the hope that fans of other languages could more
-easily create or enhance their own text user interfaces.
+Jexer](https://gitlab.com/AutumnMeowMeow/jexer/wikis/porting) page on
+the wiki: it has pointers to where the key features are, and a
+potential roadmap if you wanted to take part or all of it into your
+own hands.  I licensed Jexer as MIT, stuck with simple Java 1.6, and
+thoroughly documented it in the hope that fans of other languages
+could more easily create or enhance their own text user interfaces.
 
 
 Acknowledgments

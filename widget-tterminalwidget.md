@@ -14,8 +14,8 @@ inside xterm.
 ptypipe
 -------
 
-[ptypipe](https://gitlab.com/klamonte/ptypipe) executes a shell inside
-a new TTY, and can notify the shell when the TTerminalWidget is
+[ptypipe](https://gitlab.com/AutumnMeowMeow/ptypipe) executes a shell
+inside a new TTY, and can notify the shell when the TTerminalWidget is
 resized.  It looks for the dtterm/xterm window size sequence, and if
 seen executes ioctl(TIOCSWINSZ).
 

@@ -69,7 +69,7 @@ graph RL;
 The jexer.backend package can be used standalone to provide keyboard,
 mouse, and screen support for any kind of application.  For an example
 of using the Swing backend without any of the rest of Jexer, [see
-here](https://gitlab.com/klamonte/jermit/blob/master/src/jermit/ui/qodem/QodemUI.java).
+here](https://gitlab.com/AutumnMeowMeow/jermit/blob/master/src/jermit/ui/qodem/QodemUI.java).
 
 Events are always concrete subclasses of abstract class
 jexer.event.TInputEvent.  In addition to mouse press/release/movement
@@ -231,6 +231,6 @@ much higher that the per-image bit depth.  The screen below is using
 256-color palettes for each strip, yet it almost looks like 16-bit
 depth:
 
-![jexer.backend.HQSixelEncoder](https://gitlab.com/klamonte/jexer/-/raw/master/screenshots/snake_xterm_hq.png)
+![jexer.backend.HQSixelEncoder](https://gitlab.com/AutumnMeowMeow/jexer/-/raw/master/screenshots/pca_match.png)
 
 😻

@@ -84,7 +84,7 @@ the terminals last tested against Jexer:
     February 10, 2022.)
 
 When running on the raw Linux console,
-[LCXterm](https://gitlab.com/klamonte/lcxterm) or
+[LCXterm](https://gitlab.com/AutumnMeowMeow/lcxterm) or
 [Qodem](http://qodem.sourceforge.net) are required if one wishes to
 use the mouse.  [GPM](https://github.com/telmich/gpm) is also
 required.
@@ -97,7 +97,7 @@ The table below lists embeddable widgets tested against Jexer recently:
 
 | Terminal       | Language | Mouse Click | Mouse Cursor | Images | Link |
 | -------------- | -------- | ----------- | ------------ | ------ | ---- |
-| jexer (ECMA48) | Java     | yes         | yes          | yes    | https://gitlab.com/klamonte/jexer
+| jexer (ECMA48) | Java     | yes         | yes          | yes    | https://gitlab.com/AutumnMeowMeow/jexer
 | upp-components Terminal | C++  | yes    | yes          | yes    | https://github.com/ismail-yilmaz/upp-components/tree/master/CtrlLib/Terminal
 | xterm.js(2)    | TypeScript | yes       | yes          | yes    | https://xtermjs.org
 | gowid          | Go       | yes         | yes          | no(1)  | https://github.com/gcla/gowid

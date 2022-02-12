@@ -214,7 +214,7 @@ Used by jexer.TTerminalWindow.  If 'true', or if 'auto' and 'ptypipe'
 is on the PATH, then spawn shell using the 'ptypipe' utility rather
 than 'script'.  This permits terminals to resize with the window.
 ptypipe is a separate C language utility, available at
-https://gitlab.com/klamonte/ptypipe.  Default: auto.
+https://gitlab.com/AutumnMeowMeow/ptypipe.  Default: auto.
 
 When jexer.TTerminal.ptypipe is true, and jexer.TTerminal.shell is not
 set, then the command used for the terminal shell is

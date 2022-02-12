@@ -37,7 +37,7 @@ ambiguous.  This section describes such issues.
 - TTerminalWindow can only notify the child process of changes in
   window size if using the 'ptypipe' utility, due to Java's lack of
   support for forkpty() and similar.  ptypipe is available at
-  https://gitlab.com/klamonte/ptypipe.
+  https://gitlab.com/AutumnMeowMeow/ptypipe.
 
 - Java's InputStreamReader as used by the ECMA48 backend requires a
   valid UTF-8 stream.  The default X10 encoding for mouse coordinates
